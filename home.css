@@ -43,27 +43,27 @@ body {
 /* HEADER */
 
 #header {
+    display: block;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 15%;
+    height: 100%;
 
     font-family: "Prompt";
     background-color: #843179;
-    background-color: #843179;
     background-color: var(--primary);
-    display: flex;
-    padding: 0.5em 1em;
-    align-items: center;
-
-    position: sticky;
-    top: 0;
+    padding: 10% 2%;
 }
 
 .headItem {
-    margin-right: 2em;
-    padding: 0.25em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 0.1em;
     color: white;
     text-decoration: none;
-
-    border-radius: 0.5em;
 }
 
 .headItem:hover {
@@ -81,12 +81,20 @@ body {
     margin-left: 0.5em;
 }
 
-#browsebar {
-    padding: 0.25em;
-    height: 50%;
-    border-radius: 0.5em;
+#srch {
+    padding: 0px;
+    margin: 1em;
+    display: flex;
+    justify-items: center;
+}
 
-    border: 0.1em solid var(--gray);
+#browsebar {
+    margin-right: 0.2em;
+    padding: 0.25em;
+    height: 1.2em;
+    width: 75%;
+
+    border: 0.1em solid white;
     background-color: #c5c0c3;
     background-color: var(--secondary);
     color: #44353f;
@@ -94,14 +102,13 @@ body {
 }
 
 #search {
-    margin-left: 0.2em;
+    margin-right: auto;
     padding:0.2em;
     height: 1em;
 
     background-color: #44353f;
     background-color: var(--gray);
     border: 0.1em solid var(--secondary);
-    border-radius:0.5em;
 }
 
 #search:hover {
@@ -356,7 +363,6 @@ DEACTIVATED due to ugliness
     }
 
     #browsebar {
-        width: 15%;
         margin-left: auto;
     }
 
@@ -383,12 +389,14 @@ DEACTIVATED due to ugliness
     }
 
     #logo {
-        width: 100%;
+        margin-right:0;
+        width: 75%;
         overflow: hidden;
     }
 
     #content {
-        width: 92%;
+        width: 75%;
+        margin-right: 0;
     }
 
     .contenttext {
