@@ -9,23 +9,22 @@
 <body>
     <div id="header">
         <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFavicon.png"></a>
-        <a class="headItem" id="dropA">My Profile</a>
-        <a class="headItem" id="dropB">About</a>
+        <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'a')">My Profile</a>
+        <div class="headItem" id="dropdownA" style="display:none;">
+            <ul class="droplist">
+                <a href="galleries/Flowers.html"><li class="drop_item">Experience</li></a>
+                <a href="galleries/Landscapes.html"><li class="drop_item">Organizations</li></a>
+                <a href="galleries/Plein_Air.html"><li class="drop_item">Projects</li></a>
+            </ul>
+        </div>
+        <a class="headItem" id="dropB" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'b')">About</a>
+        <div class="headItem" id="dropdownB" style="display:none;">
+            <ul class="droplist">
+                <a href="about/Shanthi_Manickam.html"><li class="drop_item">Overview</li></a>
+                <a href="about/Contact.html"><li class="drop_item">Contact</li></a>
+            </ul>
+        </div>
         <div id="srch"><input type="text" placeholder="Browse" name="browse" id="browsebar"><img src="images/SearchIcon.png" id="search" onmousedown="browse()"></div>
-    </div>
-
-    <div id="dropdownA" style="display:none;">
-        <ul class="droplist">
-            <a href="galleries/Flowers.html"><li class="drop_item">Experience</li></a>
-            <a href="galleries/Landscapes.html"><li class="drop_item">Organizations</li></a>
-            <a href="galleries/Plein_Air.html"><li class="drop_item">Projects</li></a>
-        </ul>
-    </div>
-    <div id="dropdownB" style="display:none;">
-        <ul class="droplist">
-            <a href="about/Shanthi_Manickam.html"><li class="drop_item">Overview</li></a>
-            <a href="about/Contact.html"><li class="drop_item">Contact</li></a>
-        </ul>
     </div>
 
     <div id="top">

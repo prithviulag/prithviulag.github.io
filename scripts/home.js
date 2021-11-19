@@ -137,30 +137,78 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
     ]
 };
 
-function dropdown(dropID) {
+var isOpenA = false;
+var isOpenB = false;
+
+function dropdown(dropID, dropClick) {
     if (document.getElementById(dropID).style.display=="none") {
+        document.getElementById(dropClick).style.backgroundColor="var(--secondary)";
+        document.getElementById(dropClick).style.color="var(--gray)";
         document.getElementById(dropID).style.display="block";
-        document.getElementById(dropID + "img").style.transform="rotate(180deg)";
+
+        if (dropID == "dropdownA") {
+            isOpenA = true;
+        }
+        if (dropID == "dropdownB") {
+            isOpenB = true;
+        }
     } else {
+        if (dropID == "dropdownA") {
+            isOpenA = false;
+        }
+        if (dropID == "dropdownB") {
+            isOpenB = false;
+        }
+        document.getElementById(dropClick).style.backgroundColor="var(--primary)";
+        document.getElementById(dropClick).style.color="white";
         document.getElementById(dropID).style.display="none"
-        document.getElementById(dropID + "img").style.transform="none";
+        document.getElementById(dropClick).style.marginBottom="5%";
     }
 }
 
-document.getElementById("dropA").addEventListener("click", function() {dropdown("dropdownA")});
-document.getElementById("dropB").addEventListener("click", function() {dropdown("dropdownB")});
+function menuHover(e) {
+    e.style.backgroundColor = "var(--secondary)";
+    e.style.color = "var(--gray)";
+    e.style.cursor = "pointer";
+}
+
+function menuUnHover(e, letter) {
+    if (letter == "a") {
+        if (isOpenA == false) {
+            e.style.backgroundColor = "var(--primary)";
+            e.style.color = "white";
+            e.style.cursor = "default";
+        }
+    }
+    if (letter == "b") {
+        if (isOpenB == false) {
+            e.style.backgroundColor = "var(--primary)";
+            e.style.color = "white";
+            e.style.cursor = "default";
+        }
+    }
+}
+
+document.getElementById("dropA").addEventListener("click", function() {dropdown("dropdownA", "dropA")});
+document.getElementById("dropB").addEventListener("click", function() {dropdown("dropdownB", "dropB")});
 
 
 //Dropdown closers
 
 function closeChecker(e) { //checks and filters external window taps to figure out what to close
     if ((e.target != document.getElementById("dropdownA"))  & (e.target != document.getElementById("dropA")) & (e.target != document.getElementById("dropdownAimg")) /* & (e.target.className != "drop_item") */) {
-        document.getElementById("dropdownA").style.display="none";
-        document.getElementById("dropdownA" + "img").style.transform="none";
+        document.getElementById("dropA").style.backgroundColor="var(--primary)";
+        document.getElementById("dropA").style.color="white";
+        document.getElementById("dropdownA").style.display="none"
+        document.getElementById("dropA").style.marginBottom="5%";
+        isOpenA = false;
     }
     if ((e.target != document.getElementById("dropdownB"))  & (e.target != document.getElementById("dropB")) & (e.target != document.getElementById("dropdownBimg")) /* & (e.target.className != "drop_item") */) {
-        document.getElementById("dropdownB").style.display="none";
-        document.getElementById("dropdownB" + "img").style.transform="none";
+        document.getElementById("dropB").style.backgroundColor="var(--primary)";
+        document.getElementById("dropB").style.color="white";
+        document.getElementById("dropdownB").style.display="none"
+        document.getElementById("dropB").style.marginBottom="5%";
+        isOpenB = false;
     }
     
     if (e.target == document.getElementById("popup")) {
