@@ -370,14 +370,12 @@ DEACTIVATED due to ugliness
         display: none;
     }
 
-    #dropdownA {
-        top: 4em;
-        margin-left: 0.75em;
-    }
-
-    #dropdownB {
-        top: 4em;
-        margin-left: 5.75em;
+    #dropdownA, #dropdownB {
+        font-size: 0.9em;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:unset;
     }
 
     #logo {
