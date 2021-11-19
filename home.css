@@ -1,21 +1,21 @@
 @font-face {
     font-family: Prompt;
-    src: url(fonts/prompt/Prompt-Regular.ttf);
+    src: url(fonts/poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: Prompt-Bold;
-    src: url(fonts/prompt/Prompt-Bold.ttf);
+    src: url(fonts/poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: Prompt-Ital;
-    src: url(fonts/prompt/Prompt-Italic.ttf);
+    src: url(fonts/poppins/Poppins-Italic.ttf);
 }
 
 @font-face {
     font-family: Bebas;
-    src: url(fonts/bebas/BebasNeue-Regular.ttf);
+    src: url(fonts/poppins/Poppins-Bold.ttf);
 }
 
 a {
@@ -24,9 +24,9 @@ a {
 }
 
 :root {
-    --primary: #843179;
-    --secondary: #c5c0c3;
-    --gray: #44353f;
+    --primary: #396622;
+    --secondary: #ebebeb;
+    --gray: #4e3024;
     --silver: #c5c0c3;
     --gray2: #595959;
 }
