@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Prompt;
+    src: url(fonts/prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Prompt-Bold;
+    src: url(fonts/prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+    font-family: Prompt-Ital;
+    src: url(fonts/prompt/Prompt-Italic.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/bebas/BebasNeue-Regular.ttf);
+}
+
+:root {
+    --primary: #843179;
+    --secondary: #c5c0c3;
+    --gray: #44353f;
+    --silver: #c5c0c3;
+}
+
+#top {
+    margin: auto 10%;
+    display: flex;
+}
+
+#toptext {
+    color: #843179;
+    color: var(--primary);
+    font-family: "Prompt";
+    font-size: 1.6em;
+    text-align: left;
+    margin-left: 0.25em;
+    align-self: center;
+}
+
+#topindicator {
+    color: #44353f;
+    color: var(--gray);
+    font-family: "Bebas";
+    font-size: 2em;
+    text-align: right;
+    align-self: center;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resImg {
+    width: 24.5%;
+    margin: 0.25%;
+    align-self: center;
+}
+
+.resImg:hover {
+    cursor:pointer;
+    filter: brightness(50%);
+}
+
+#noResAlert {
+    display: none;
+    margin: auto 10%;
+    margin-top: 0;
+}
+
+#tagDisplay {
+    margin-top: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagBoxes {
+    color: #843179;
+    color: var(--primary);
+    margin: 0 0.2em;
+    padding: 0.1em 0.1em;
+    text-decoration: underline;
+}
+
+.tagBoxes:hover {
+    cursor: pointer;
+    background-color: #c5c0c3;
+    background-color: var(--secondary);
+}
+
+#tagBox0 {
+    margin-left: 0.5em;
+}
+
+#popupInset {
+    padding-bottom: 0.5em;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #top {
+        margin-left: 4%;
+    }
+
+    .resImg {
+        width: 49.5%;
+    }
+
+    #noResAlert {
+        margin-left: 4%;
+    }
+}

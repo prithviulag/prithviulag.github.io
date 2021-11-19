@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shan's Art Gallery</title>
+        <link rel="stylesheet" type="text/css" href="home.css"/>
+        <link rel="stylesheet" type="text/css" href="browse.css"/>
+        <link rel="icon" type="image/png" href="images/ShansFavicon.png"/>
+    </head>
+<body onload="browseSite()">
+    <div id="header">
+        <a class="headItem" id="dropA">Collections<img id="dropdownAimg" src="images/DropdownIcon.png"/></a>
+        <a class="headItem" id="dropB">About<img id="dropdownBimg" src="images/DropdownIcon.png"/></a>
+        <input type="text" placeholder="Browse" name="browse" id="browsebar">
+        <img class="headItem" src="images/SearchIcon.png" id="search" onclick="browse()">
+        <a class = "headItem" id="header_logo_cont" href="home.html"><img id="header_logo" src="images/ShansFavicon.png"></a>
+    </div>
+
+    <div id="dropdownA" style="display:none;">
+        <ul class="droplist">
+            <a href="galleries/Flowers.html"><li class="drop_item">Flowers</li></a>
+            <a href="galleries/Landscapes.html"><li class="drop_item">Landscapes</li></a>
+            <a href="galleries/Plein_Air.html"><li class="drop_item">Plein Air</li></a>
+            <a href="galleries/Portraits.html"><li class="drop_item">Portraits</li></a>
+            <a href="galleries/Still_Life.html"><li class="drop_item">Still Life</li></a>
+        </ul>
+    </div>
+    <div id="dropdownB" style="display:none;">
+        <ul class="droplist">
+            <a href="about/Shanthi_Manickam.html"><li class="drop_item">Shanthi Manickam</li></a>
+            <a href="about/Contact.html"><li class="drop_item">Contact</li></a>
+        </ul>
+        <!--<div id="socials">
+            <a class="sociallink" href="https://www.instagram.com/shanthiartist/" target="_blank"><img class="socialmedia" src="images/instagram.png" alt="Instagram"/></a>
+            <a class="sociallink" href="https://www.facebook.com/shanthi.manickam" target="_blank"><img class="socialmedia" src="images/facebook.png" alt="Facebook"/></a>
+        </div>-->
+    </div>
+
+    <div id="top">
+        <h1 id="topindicator">Search:</h1><h1 id="toptext"></h1>
+    </div>
+
+    <p id="noResAlert" style="display:none;">There appear to be no results, or a word might be misspelled. Try a different query.</p>
+    
+    <div id="content">
+        <!--resImg[ind] id images go in here, created by js-->
+    </div>
+
+    <div id="popup" style="display:none;">
+        <div id="popupInset">
+            <div id="popupTitle" class="topic">
+                <div id="imgtitle">
+                </div>
+                <a id="incat"></a>
+                <img src='images/Xbutton.png' id='xbutton' style='height:1em;' onmousedown='closeLarger()'>
+            </div>
+            <div style="display:flex;justify-content:center;"><img id="popupimg" src="images/ShansFavicon.png"></div>
+            <div id="tagDisplay">Tags: </div>
+        </div>
+    </div>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>

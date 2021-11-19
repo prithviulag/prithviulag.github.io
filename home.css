@@ -1,0 +1,405 @@
+@font-face {
+    font-family: Prompt;
+    src: url(fonts/prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Prompt-Bold;
+    src: url(fonts/prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+    font-family: Prompt-Ital;
+    src: url(fonts/prompt/Prompt-Italic.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/bebas/BebasNeue-Regular.ttf);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    --primary: #843179;
+    --secondary: #c5c0c3;
+    --gray: #44353f;
+    --silver: #c5c0c3;
+    --gray2: #595959;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: #c5c0c3;
+    background-color: var(--secondary);
+    font-family:"Prompt", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* HEADER */
+
+#header {
+    z-index: 1;
+
+    font-family: "Prompt";
+    background-color: #843179;
+    background-color: #843179;
+    background-color: var(--primary);
+    display: flex;
+    padding: 0.5em 1em;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.headItem {
+    margin-right: 2em;
+    padding: 0.25em;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 0.5em;
+}
+
+.headItem:hover {
+    background-color: #c5c0c3;
+    background-color: var(--secondary);
+    cursor: pointer;
+    color: #44353f;
+    color: var(--gray);
+}
+
+#dropdownAimg,
+#dropdownBimg {
+    height: 0.75em;
+    width: 0.75em;
+    margin-left: 0.5em;
+}
+
+#browsebar {
+    padding: 0.25em;
+    height: 50%;
+    border-radius: 0.5em;
+
+    border: 0.1em solid white;
+    background-color: #c5c0c3;
+    background-color: var(--secondary);
+    color: #44353f;
+    color: var(--gray);
+}
+
+#search {
+    margin-left: 0.2em;
+    padding:0.2em;
+    height: 1em;
+
+    background-color: #44353f;
+    background-color: var(--gray);
+    border: 0.1em solid white;
+    border-radius:0.5em;
+}
+
+#search:hover {
+    background-color: #c5c0c3;
+    background-color: var(--silver);
+}
+
+#header_logo {
+    height: 2.9em;
+    margin: auto auto;
+    border-radius: 1em;
+}
+
+
+#header_logo_cont {
+    display:flex;
+    padding: 0.1em;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #c5c0c3;
+    background-color: var(--silver);
+}
+
+/* HEADER DROPDOWNS */
+
+#dropdownA {
+    z-index: 1;
+    background-color: #44353f;
+    background-color: var(--gray);
+    color: white;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+
+    margin-left:0.25em;
+    width: 8.5em;
+    padding: 0;
+
+    position: fixed;
+    top: 4em;
+
+    align-items: center;
+}
+
+#dropdownB {
+    z-index: 1;
+    background-color: #44353f;
+    background-color: var(--gray);
+    color: white;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+
+    width: 6.75em;
+    padding: 0;
+    margin-left: 9em;
+
+    position: fixed;
+    top: 4em;
+
+    align-items: center;
+}
+
+.droplist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.drop_item {
+    padding: 0;
+    margin: 0.5em 0.5em;
+}
+
+.drop_item:hover {
+    color: #843179;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+#dropA, #dropB {
+    font-size: 1.1em;
+}
+
+/* TOP */
+#top {
+    display: flex;
+    /* background-image: url(img/SearchIcon.png); */
+}
+
+#logo {
+    margin:auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+/* SOCIALS 
+
+DEACTIVATED due to ugliness 
+#socials {
+    display: flex;
+    padding: 5%;
+    padding-bottom: 7%;
+    justify-content: left;
+    align-content: center;
+}
+
+.sociallink {
+    display: flex;
+    justify-content: center;
+    margin: 0 1%;
+    width: 25%;
+}
+
+.socialmedia {
+    opacity: 0.7;
+    width: 100%;
+    border-radius: 25%;
+}
+
+.socialmedia:hover {
+    opacity: 1;
+}
+
+*/
+
+/* CONTENT */
+
+#content {
+    margin: auto auto;
+    width: 70%;
+}
+
+.topic,
+.contenttext {
+    color: #44353f;
+    color: var(--gray);
+    width: 100%;
+    text-align: center;
+}
+
+.topic {
+    font-family: "Bebas";
+    margin-bottom: 0;
+}
+
+.ital {
+    font-family: "Prompt-Ital";
+}
+
+.gallery {
+    width: 75%;
+    margin: auto auto;
+    margin-bottom: 1em;
+}
+
+.gallImg {
+    width: 10em;
+    background-position: center;
+    background-size: cover;
+    padding: 0.1em;
+}
+
+.gallImg:hover {
+    background-color: black;
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.desc {
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+    text-align: center;
+    margin:0px;
+    margin-top: 15em;
+}
+
+#popup {
+    z-index: 2;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#popupInset {
+    position:fixed;
+    top: 1%;
+    left: 25%;
+    right: 25%;
+    padding-bottom: 2%;
+    background-color: white;
+}
+
+#popupimg {
+    max-height: 85vh;
+    max-width: 90%;
+}
+
+#popupTitle {
+    display: flex;
+    margin: 0.1em;
+    font-size: 2em;
+}
+
+#imgtitle {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+#xbutton {
+    margin-left: auto;
+    margin-right: 0.5em;
+    align-self: center;
+}
+
+#xbutton:hover {
+    cursor: pointer;
+    background-color: #c5c0c3;
+    background-color: var(--secondary);
+}
+
+#incat {
+    font-family: "Prompt";
+    font-size: 0.5em;
+    color: #843179;
+    color: var(--primary);
+    padding: 0em 0.25em;
+    margin-top: 0.4em;
+    align-self: center;
+}
+
+#incat:hover {
+    background-color: #c5c0c3;
+    background-color:var(--silver);
+}
+
+@media (max-aspect-ratio: 1/1), (max-width: 500px) {
+    
+    #header_logo {
+        height: 2em;
+        border-radius: 0.5em;
+    }
+
+    #header_logo_cont {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        padding: 0;
+    }
+
+    #browsebar {
+        width: 15%;
+        margin-left: auto;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #dropdownAimg {
+        display: none;
+    }
+
+    #dropdownBimg {
+        display: none;
+    }
+
+    #dropdownA {
+        top: 4em;
+        margin-left: 0.75em;
+    }
+
+    #dropdownB {
+        top: 4em;
+        margin-left: 5.75em;
+    }
+
+    #logo {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #content {
+        width: 92%;
+    }
+
+    .contenttext {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #popupInset {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+} 
+

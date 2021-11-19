@@ -1,0 +1,92 @@
+{
+    "General_Keywords": [
+        "art", "painting", "paint", "arts", "artist", "Shanthi", "Manickam", "Shan", "Gallery", "Collection", "Galleries", "Collections"
+    ],
+    "Collections": [
+        {
+            "name": "Flowers",
+            "directory": "images/Flowers/", 
+            "contents": [
+                {
+                    "name": "Magnolia Blossoms",
+                    "src": "IMG_5466.jpg",
+                    "tags": ["Spring", "Blooms", "Petals"]
+                },
+                {
+                    "name": "Full Bloom",
+                    "src": "IMG_5500.jpg",
+                    "tags": ["Petals", "Purple", "Cosmos"]
+                }
+            ]
+        },
+        {
+            "name": "Landscapes",
+            "directory": "images/Landscapes/",
+            "contents": [
+                {
+                    "name": "Winter Trees",
+                    "src": "IMG_5589.jpg",
+                    "tags": ["Snow", "Outdoors"]
+                },
+                {
+                    "name": "Yard and Snowy Bush",
+                    "src": "IMG_7963.jpg",
+                    "tags": ["Snow", "Outdoors", "Winter"]
+                },
+                {
+                    "name": "Busch Gardens",
+                    "src": "IMG_7964.jpg",
+                    "tags": ["Water", "Outdoors", "Trees", "Green", "River"]
+                },
+                {
+                    "name": "Thomas Meeting",
+                    "src": "IMG_7965.jpg",
+                    "tags": ["Snow", "Snowy", "House", "Townhome", "Building", "Winter"]
+                },
+                {
+                    "name": "Snow Bush",
+                    "src": "IMG_7966.jpg",
+                    "tags": ["Snow", "Snowy", "Outdoors", "Winter"]
+                }
+            ]
+        },
+        {
+            "name": "Plein_Air",
+            "directory": "images/Plein_Air/",
+            "contents": [
+                {
+                    "name": "_",
+                    "src": "_",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Portraits",
+            "directory": "images/Portraits/",
+            "contents": [
+                {
+                    "name": "Quaint Smile",
+                    "src": "IMG_0036.jpg",
+                    "tags": ["Woman", "Person"]
+                },
+                {
+                    "name": "White Dog",
+                    "src": "IMG_7967.jpg",
+                    "tags": ["Animal", "Fluffy"]
+                }
+            ]
+        },
+        {
+            "name": "Still_Life",
+            "directory": "images/Still_Life/",
+            "contents": [
+                {
+                    "name": "Frog",
+                    "src": "IMG_7016.jpg",
+                    "tags": ["Bird", "Vase", "Animal"]
+                }
+            ]
+        }
+    ]
+}
