@@ -174,9 +174,7 @@ function dropdown(dropID, dropClick) {
             isOpenB = true;
         }
     } else {
-        if (mobileView == true) {
-            document.getElementById("header").style.width="15%";
-        }
+        document.getElementById("header").style.width="15%";
         if (dropID == "dropdownA") {
             isOpenA = false;
         }
