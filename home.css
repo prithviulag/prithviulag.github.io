@@ -99,6 +99,8 @@ body {
     background-color: var(--secondary);
     color: #4e3024;
     color: var(--gray);
+    border-radius: 0px;
+    -webkit-border-radius:0px;
 }
 
 #search {
