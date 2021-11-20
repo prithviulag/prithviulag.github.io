@@ -9,7 +9,7 @@
 <body>
     <div id="header">
         <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFavicon.png"></a>
-        <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'a')">My Profile</a>
+        <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownA')" onload="initOpenables(this, 'dropdownA')" >My Profile</a>
         <div class="headItem" id="dropdownA" style="display:none;">
             <ul class="droplist">
                 <a href="galleries/Flowers.html"><li class="drop_item">Experience</li></a>
@@ -17,7 +17,7 @@
                 <a href="galleries/Plein_Air.html"><li class="drop_item">Projects</li></a>
             </ul>
         </div>
-        <a class="headItem" id="dropB" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'b')">About</a>
+        <a class="headItem" id="dropB" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownB')" onload="initOpenables(this, 'dropdownB')">About</a>
         <div class="headItem" id="dropdownB" style="display:none;">
             <ul class="droplist">
                 <a href="about/PLACEHOLDER.html"><li class="drop_item">Overview</li></a>
