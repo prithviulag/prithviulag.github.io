@@ -143,8 +143,12 @@ var mobileView = false;
 function changeScreenSize(e) {
     if (e.matches) {
         mobileView = true;
+        if ((isOpenA) || (isOpenB)){
+            document.getElementById("header").style.width="40%";
+        }
     } else {
         mobileView = false;
+        document.getElementById("header").style.width="15%";
     }
 }
 

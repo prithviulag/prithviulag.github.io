@@ -138,13 +138,17 @@ body {
     background-color: #44353f;
     background-color: var(--gray);
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
     margin-top: -5%;
 
     padding: 0.1em;
 
     align-items: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #dropdownB {
@@ -152,13 +156,17 @@ body {
     background-color: #44353f;
     background-color: var(--gray);
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
     margin-top: -5%;
 
     padding: 0.1em;
 
     align-items: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .droplist {
@@ -340,7 +348,7 @@ DEACTIVATED due to ugliness
     background-color:var(--silver);
 }
 
-@media (max-aspect-ratio: 1/1), (max-width: 700px) {
+@media (max-aspect-ratio: 1/1), (max-width: 770px) {
     
     #header_logo {
         height: 2em;
@@ -371,11 +379,11 @@ DEACTIVATED due to ugliness
     }
 
     #dropdownA, #dropdownB {
-        font-size: 1em;
+        font-size: 0.9em;
         width: 100%;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow:ellipsis;
+        text-overflow: ellipsis;
     }
 
     #logo {
