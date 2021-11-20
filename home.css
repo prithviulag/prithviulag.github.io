@@ -371,7 +371,7 @@ DEACTIVATED due to ugliness
     }
 
     #dropdownA, #dropdownB {
-        font-size: 0.9em;
+        font-size: 1em;
         width: 100%;
         overflow: hidden;
         white-space: nowrap;

@@ -157,7 +157,7 @@ var isOpenB = false;
 function dropdown(dropID, dropClick) {
     if (document.getElementById(dropID).style.display=="none") {
         if (mobileView == true) {
-            document.getElementById("header").style.width="25%";
+            document.getElementById("header").style.width="40%";
         }
         document.getElementById(dropClick).style.backgroundColor="var(--secondary)";
         document.getElementById(dropClick).style.color="var(--gray)";
