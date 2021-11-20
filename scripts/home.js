@@ -140,10 +140,13 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
 const mediaQuery = window.matchMedia("(max-width: 700px)");
 var mobileView = false;
 
+let openables = [[document.getElementById("dropA"), "dropdownA"], [document.getElementById("dropB"), "dropdownB"]];
+let openArr = [];
+
 function changeScreenSize(e) {
     if (e.matches) {
         mobileView = true;
-        if ((isOpenA) || (isOpenB)){
+        if (openArr.length > 0){
             document.getElementById("header").style.width="40%";
         }
     } else {
@@ -159,9 +162,6 @@ try {
 }
 
 changeScreenSize(mediaQuery);
-
-let openables = [[document.getElementById("dropA"), "dropdownA"], [document.getElementById("dropB"), "dropdownB"]];
-let openArr = [];
 
 function initOpenables(e, dropdown){ //currently not working, figure out what's the issue
     console.log("check");
