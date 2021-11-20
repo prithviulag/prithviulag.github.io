@@ -152,7 +152,12 @@ function changeScreenSize(e) {
     }
 }
 
-mediaQuery.addEventListener("change", changeScreenSize);
+try {
+    mediaQuery.addEventListener("change", changeScreenSize);
+} catch (error) {
+    mediaQuery.addListener(changeScreenSize);
+}
+
 changeScreenSize(mediaQuery);
 
 var isOpenA = false;
@@ -163,8 +168,8 @@ function dropdown(dropID, dropClick) {
         if (mobileView == true) {
             document.getElementById("header").style.width="40%";
         }
-        document.getElementById(dropClick).style.backgroundColor="var(--secondary)";
-        document.getElementById(dropClick).style.color="var(--gray)";
+        document.getElementById(dropClick).style.backgroundColor="#ebebeb";
+        document.getElementById(dropClick).style.color="#4e3024";
         document.getElementById(dropID).style.display="block";
 
         if (dropID == "dropdownA") {
@@ -181,7 +186,7 @@ function dropdown(dropID, dropClick) {
         if (dropID == "dropdownB") {
             isOpenB = false;
         }
-        document.getElementById(dropClick).style.backgroundColor="var(--primary)";
+        document.getElementById(dropClick).style.backgroundColor="#396622";
         document.getElementById(dropClick).style.color="white";
         document.getElementById(dropID).style.display="none"
         document.getElementById(dropClick).style.marginBottom="5%";
@@ -189,22 +194,22 @@ function dropdown(dropID, dropClick) {
 }
 
 function menuHover(e) {
-    e.style.backgroundColor = "var(--secondary)";
-    e.style.color = "var(--gray)";
+    e.style.backgroundColor = "#ebebeb";
+    e.style.color = "#4e3024";
     e.style.cursor = "pointer";
 }
 
 function menuUnHover(e, letter) {
     if (letter == "a") {
         if (isOpenA == false) {
-            e.style.backgroundColor = "var(--primary)";
+            e.style.backgroundColor = "#396622";
             e.style.color = "white";
             e.style.cursor = "default";
         }
     }
     if (letter == "b") {
         if (isOpenB == false) {
-            e.style.backgroundColor = "var(--primary)";
+            e.style.backgroundColor = "#396622";
             e.style.color = "white";
             e.style.cursor = "default";
         }
@@ -219,7 +224,7 @@ document.getElementById("dropB").addEventListener("click", function() {dropdown(
 
 function closeChecker(e) { //checks and filters external window taps to figure out what to close
     if ((e.target != document.getElementById("dropdownA"))  & (e.target != document.getElementById("dropA")) & (e.target != document.getElementById("dropdownAimg")) /* & (e.target.className != "drop_item") */) {
-        document.getElementById("dropA").style.backgroundColor="var(--primary)";
+        document.getElementById("dropA").style.backgroundColor="#396622";
         document.getElementById("dropA").style.color="white";
         document.getElementById("dropdownA").style.display="none"
         document.getElementById("dropA").style.marginBottom="5%";
@@ -229,7 +234,7 @@ function closeChecker(e) { //checks and filters external window taps to figure o
         }
     }
     if ((e.target != document.getElementById("dropdownB"))  & (e.target != document.getElementById("dropB")) & (e.target != document.getElementById("dropdownBimg")) /* & (e.target.className != "drop_item") */) {
-        document.getElementById("dropB").style.backgroundColor="var(--primary)";
+        document.getElementById("dropB").style.backgroundColor="#396622";
         document.getElementById("dropB").style.color="white";
         document.getElementById("dropdownB").style.display="none"
         document.getElementById("dropB").style.marginBottom="5%";

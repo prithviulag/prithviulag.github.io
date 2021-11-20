@@ -35,7 +35,7 @@ a {
 body {
     width: 100%;
     margin: 0px;
-    background-color: #c5c0c3;
+    background-color: #ebebeb;
     background-color: var(--secondary);
     font-family:"Prompt", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -51,7 +51,7 @@ body {
     height: 100%;
 
     font-family: "Prompt";
-    background-color: #843179;
+    background-color: #396622;
     background-color: var(--primary);
     padding: 10% 2%;
 }
@@ -67,10 +67,10 @@ body {
 }
 
 .headItem:hover {
-    background-color: #c5c0c3;
+    background-color: #ebebeb;
     background-color: var(--secondary);
     cursor: pointer;
-    color: #44353f;
+    color: #4e3024;
     color: var(--gray);
 }
 
@@ -95,9 +95,9 @@ body {
     width: 75%;
 
     border: 0.1em solid white;
-    background-color: #c5c0c3;
+    background-color: #ebebeb;
     background-color: var(--secondary);
-    color: #44353f;
+    color: #4e3024;
     color: var(--gray);
 }
 
@@ -106,19 +106,21 @@ body {
     padding:0.2em;
     height: 1em;
 
-    background-color: #44353f;
+    background-color: #4e3024;
     background-color: var(--gray);
+    border: 0.1em solid #ebebeb;
     border: 0.1em solid var(--secondary);
 }
 
 #search:hover {
-    background-color: #c5c0c3;
+    background-color: #ccaa88;
     background-color: var(--silver);
 }
 
 #header_logo {
     height: 3em;
     margin: auto auto;
+    border: 2px solid #ccaa88;
     border: 2px solid var(--silver);
 }
 
@@ -135,7 +137,7 @@ body {
 
 #dropdownA {
     z-index: 1;
-    background-color: #44353f;
+    background-color: #4e3024;
     background-color: var(--gray);
     color: white;
     font-size: 1em;
@@ -153,7 +155,7 @@ body {
 
 #dropdownB {
     z-index: 1;
-    background-color: #44353f;
+    background-color: #4e3024;
     background-color: var(--gray);
     color: white;
     font-size: 1em;
@@ -181,7 +183,7 @@ body {
 }
 
 .drop_item:hover {
-    color: #843179;
+    color: #396622;
     color: var(--primary);
     cursor: pointer;
 }
@@ -243,7 +245,7 @@ DEACTIVATED due to ugliness
 
 .topic,
 .contenttext {
-    color: #44353f;
+    color: #4e3024;
     color: var(--gray);
     width: 100%;
     text-align: center;
@@ -329,14 +331,14 @@ DEACTIVATED due to ugliness
 
 #xbutton:hover {
     cursor: pointer;
-    background-color: #c5c0c3;
+    background-color: #ebebeb;
     background-color: var(--secondary);
 }
 
 #incat {
     font-family: "Prompt";
     font-size: 0.5em;
-    color: #843179;
+    color: #396622;
     color: var(--primary);
     padding: 0em 0.25em;
     margin-top: 0.4em;
@@ -344,7 +346,7 @@ DEACTIVATED due to ugliness
 }
 
 #incat:hover {
-    background-color: #c5c0c3;
+    background-color: #ccaa88;
     background-color:var(--silver);
 }
 
