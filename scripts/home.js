@@ -146,11 +146,13 @@ let openArr = [];
 function changeScreenSize(e) {
     if (e.matches) {
         mobileView = true;
+        document.getElementById("search").style.display="none";
         if (openArr.length > 0){
             document.getElementById("header").style.width="40%";
         }
     } else {
         mobileView = false;
+        document.getElementById("search").style.display="inline";
         document.getElementById("header").style.width="15%";
     }
 }
@@ -213,7 +215,7 @@ document.getElementById("dropB").addEventListener("click", function() {dropdown(
 
 //Dropdown closers
 
-function closeChecker(e) { //checks and filters external window taps to figure out what to close
+function closeChecker(e) { //checks and filters external window taps to figure out what to close, also opens browsebar
     var anyOpen = false;
     openables.forEach(function(subArr) {
         if ((e.target != document.getElementById(subArr[1])) & (e.target != subArr[0])) {
@@ -229,6 +231,20 @@ function closeChecker(e) { //checks and filters external window taps to figure o
             anyOpen = true;
         }
     })
+    if (((e.target == document.getElementById("browsebar")) || (e.target == document.getElementById("search"))) & (mobileView == true)) {
+        openArr.push("browsebar");
+        document.getElementById("header").style.width="40%";
+        anyOpen = true;
+        document.getElementById("search").style.display="inline";
+    } else {
+        if (mobileView == true) {
+            document.getElementById("search").style.display="none";
+        }
+        ind = openArr.indexOf("browsebar");
+        if (ind != -1) {
+            openArr.splice(ind, 1);
+        }
+    }
     if (!anyOpen) {
         document.getElementById("header").style.width="15%";
     }
