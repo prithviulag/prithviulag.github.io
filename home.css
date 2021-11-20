@@ -375,7 +375,7 @@ DEACTIVATED due to ugliness
         width: 100%;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow:unset;
+        text-overflow:ellipsis;
     }
 
     #logo {

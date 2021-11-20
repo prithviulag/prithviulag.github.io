@@ -137,11 +137,28 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
     ]
 };
 
+const mediaQuery = window.matchMedia("(max-width: 700px)");
+var mobileView = false;
+
+function changeScreenSize(e) {
+    if (e.matches) {
+        mobileView = true;
+    } else {
+        mobileView = false;
+    }
+}
+
+mediaQuery.addEventListener("change", changeScreenSize);
+changeScreenSize(mediaQuery);
+
 var isOpenA = false;
 var isOpenB = false;
 
 function dropdown(dropID, dropClick) {
     if (document.getElementById(dropID).style.display=="none") {
+        if (mobileView == true) {
+            document.getElementById("header").style.width="25%";
+        }
         document.getElementById(dropClick).style.backgroundColor="var(--secondary)";
         document.getElementById(dropClick).style.color="var(--gray)";
         document.getElementById(dropID).style.display="block";
@@ -153,6 +170,9 @@ function dropdown(dropID, dropClick) {
             isOpenB = true;
         }
     } else {
+        if (mobileView == true) {
+            document.getElementById("header").style.width="15%";
+        }
         if (dropID == "dropdownA") {
             isOpenA = false;
         }
@@ -202,6 +222,9 @@ function closeChecker(e) { //checks and filters external window taps to figure o
         document.getElementById("dropdownA").style.display="none"
         document.getElementById("dropA").style.marginBottom="5%";
         isOpenA = false;
+        if ((mobileView == true) & (e.target != document.getElementById("dropdownB"))  & (e.target != document.getElementById("dropB")) & (e.target != document.getElementById("dropdownBimg"))){
+            document.getElementById("header").style.width="15%";
+        }
     }
     if ((e.target != document.getElementById("dropdownB"))  & (e.target != document.getElementById("dropB")) & (e.target != document.getElementById("dropdownBimg")) /* & (e.target.className != "drop_item") */) {
         document.getElementById("dropB").style.backgroundColor="var(--primary)";
@@ -209,6 +232,9 @@ function closeChecker(e) { //checks and filters external window taps to figure o
         document.getElementById("dropdownB").style.display="none"
         document.getElementById("dropB").style.marginBottom="5%";
         isOpenB = false;
+        if ((mobileView == true) & (e.target != document.getElementById("dropdownA"))  & (e.target != document.getElementById("dropA")) & (e.target != document.getElementById("dropdownAimg"))){
+            document.getElementById("header").style.width="15%";
+        }
     }
     
     if (e.target == document.getElementById("popup")) {
