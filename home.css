@@ -195,15 +195,22 @@ body {
 
 /* TOP */
 #top {
-    display: flex;
-    /* background-image: url(img/SearchIcon.png); */
+    display: block;
+    width: 81%;
+    margin-left: 19%;
+    padding: 0%;
+    padding-bottom: 5%;
+    margin-bottom: 1%;
+    background-size: cover;
 }
 
 #logo {
-    margin:auto;
     margin-top: 0;
     margin-bottom: 0;
-    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 25%;
+    background-color: rgba(235, 235, 235, 0.8);
 }
 
 /* SOCIALS 
@@ -240,16 +247,16 @@ DEACTIVATED due to ugliness
 
 #content {
     margin: auto auto;
-    width: 85%;
+    width: 80%;
     margin-right: 0;
 }
 
 .topic,
 .contenttext {
-    color: #4e3024;
-    color: var(--gray);
+    color: white;
     width: 100%;
     text-align: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .topic {
@@ -259,6 +266,11 @@ DEACTIVATED due to ugliness
 
 .ital {
     font-family: "Prompt-Ital";
+}
+
+iframe {
+    width: 70%;
+    margin: 5% 15%;
 }
 
 .gallery {
@@ -391,7 +403,7 @@ DEACTIVATED due to ugliness
 
     #logo {
         margin-right:0;
-        width: 75%;
+        width: 50%;
         overflow: hidden;
     }
 
@@ -404,6 +416,11 @@ DEACTIVATED due to ugliness
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    iframe {
+        width: 90%;
+        margin: 5%;
     }
 
     #popupInset {

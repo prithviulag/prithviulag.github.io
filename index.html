@@ -13,8 +13,10 @@
         <div class="headItem" id="dropdownA" style="display:none;">
             <ul class="droplist">
                 <a href="galleries/Flowers.html"><li class="drop_item">Experience</li></a>
+                <a href="galleries/Flowers.html"><li class="drop_item">Skills</li></a>
                 <a href="galleries/Landscapes.html"><li class="drop_item">Organizations</li></a>
                 <a href="galleries/Plein_Air.html"><li class="drop_item">Projects</li></a>
+                <a href="galleries/Plein_Air.html"><li class="drop_item">Future Goals</li></a>
             </ul>
         </div>
         <a class="headItem" id="dropB" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownB')" onload="initOpenables(this, 'dropdownB')">About</a>
@@ -27,24 +29,22 @@
         <div id="srch"><input type="text" placeholder="Browse" name="browse" id="browsebar"><img src="images/SearchIcon.png" id="search" onmousedown="browse()"></div>
     </div>
 
-    <div id="top">
-        <img id="logo" src="images/PrithviUlaganathan.png">
+    <div style="background-image:url(images/IMG_7756.jpg);" id="top">
+        <a href="index.html"><img id="logo" src="images/PrithviUlaganathan.png"></a>
+
+        <h1 class="topic" style="margin-top:0;">Electrical Engineering Major</h1>
+        <p class="contenttext">at the Georgia Institute of Technology</p>
     </div>
 
     <div id="content">
-        <h1 class="topic" style="margin-top:0;">Electrical Engineering Major</h1>
-        <p class="contenttext">at the Georgia Institute of Technology</p>
-
         <table class="gallery">
             <tr> <!--For the second parameter of larger, include an underscore if the file name has it (js removes it for description, keeps for file name)-->
-                <td class="gallImg" onmousedown="larger(this, 'Flowers')" onmouseover="highlight(this)" onmouseout="unlight(this)" style="background-image:url(images/Flowers/IMG_5466.jpg);"><div class="desc">Organizations</div></td>
-                <td class="gallImg" onmousedown="larger(this, 'Flowers')" onmouseover="highlight(this)" onmouseout="unlight(this)" style="background-image:url(images/Flowers/IMG_5500.jpg);"><div class="desc">Experience</div></td>
-            </tr>
-            <tr>
-                <td class="gallImg" onmousedown="larger(this, 'Landscapes')" onmouseover="highlight(this)" onmouseout="unlight(this)" style="background-image:url(images/Landscapes/IMG_5589.jpg);"><div class="desc">Projects</div></td>
-                <td class="gallImg" onmousedown="larger(this, 'Portraits')" onmouseover="highlight(this)" onmouseout="unlight(this)" style="background-image:url(images/Portraits/IMG_0036.jpg);"><div class="desc">Resume</div></td>
+                <td class="gallImg" onmousedown="larger(this, 'Flowers')" onmouseover="highlight(this)" onmouseout="unlight(this)" style="background-image:url(images/SR4Pres.png);"><div class="desc">Organizations</div></td>
+                <td class="gallImg" onmousedown="larger(this, 'Flowers')" onmouseover="highlight(this)" onmouseout="unlight(this)" style="background-image:url(images/IMG_8078.jpg);"><div class="desc">Projects</div></td>
             </tr>
           </table> 
+
+        <iframe width="90%" height="315" src="https://www.youtube.com/embed/wnCAWynIKzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="popup" style="display:none;">
