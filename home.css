@@ -407,11 +407,6 @@ iframe {
         overflow: hidden;
     }
 
-    #content {
-        width: 75%;
-        margin-right: 0;
-    }
-
     .contenttext {
         width: 90%;
         margin-left: 5%;
