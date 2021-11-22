@@ -199,9 +199,14 @@ body {
     width: 81%;
     margin-left: 19%;
     padding: 0%;
-    padding-bottom: 5%;
     margin-bottom: 1%;
     background-size: cover;
+}
+
+#gradient {
+    display: block;
+    padding-bottom: 5%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), transparent)
 }
 
 #logo {
@@ -264,7 +269,7 @@ DEACTIVATED due to ugliness
     color: white;
     width: 100%;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.5);*/
 }
 
 .contenttext2 {
@@ -275,6 +280,7 @@ DEACTIVATED due to ugliness
 .topic {
     font-family: "Bebas";
     margin-bottom: 0;
+    font-size: 2.5em;
 }
 
 .ital {
