@@ -260,7 +260,7 @@ DEACTIVATED due to ugliness
 
 #content {
     margin: auto auto;
-    width: 80%;
+    width: 81%;
     margin-right: 0;
 }
 
@@ -382,8 +382,71 @@ iframe {
     background-color:var(--silver);
 }
 
+.toggHeader {
+    display:flex;
+    background-size:cover;
+    background-position:center;
+    margin-top: 1%;
+}
+
+.subheading {
+    margin: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    font-family: "Prompt-Bold";
+    padding: 0.5% 2%;
+    color: white;
+    width: 95%;
+}
+
+.closeGroup {
+    margin: 0;
+    align-self: center;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    font-family: "Prompt-Bold";
+    padding: 0.5% 2%;
+    color: white;
+    width: 5%;
+}
+
+.closeGroup:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.togglableGroup {
+    border: 1em solid rgba(0,0,0, 0.8);
+}
+
+.subheading2 {
+    padding: 0.5% 2%;
+    color: #396622;
+    color: var(--primary); 
+}
+
+.subtext, .subtext2 {
+    font-size: 1.1em;
+    padding: 0.5% 2%;
+    color: var(--gray);
+}
+
+.subtext2 {
+    padding-left: 5%;
+}
+
 @media (max-aspect-ratio: 1/1), (max-width: 770px) {
     
+    .subtext, .subtext2 {
+        font-size: 1.1em;
+        padding: 0.5% 4%;
+        color: var(--gray);
+    }
+    
+    .subtext2 {
+        padding-left: 10%;
+    }
+
     #header_logo {
         height: 2em;
     }

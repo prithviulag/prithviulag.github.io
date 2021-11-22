@@ -137,6 +137,13 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
     ]
 };
 
+var primary = "#396622";
+var secondary = "#ebebeb";
+var gray = "#4e3024";
+var silver = "#ccaa88";
+var gray2 = "#595959";
+var primary2 = "#418d20";
+
 const mediaQuery = window.matchMedia("(max-width: 700px)");
 var mobileView = false;
 
@@ -175,8 +182,8 @@ function dropdown(dropID, dropClick) {
         if (mobileView == true) {
             document.getElementById("header").style.width="40%";
         }
-        document.getElementById(dropClick).style.backgroundColor="#ebebeb";
-        document.getElementById(dropClick).style.color="#4e3024";
+        document.getElementById(dropClick).style.backgroundColor=secondary;
+        document.getElementById(dropClick).style.color=gray;
         document.getElementById(dropID).style.display="block";
 
         openArr.push(dropID); //adds it to open list
@@ -188,7 +195,7 @@ function dropdown(dropID, dropClick) {
             openArr.splice(ind, 1); //PROBLEMATIC STATEMENT!!!
         }
 
-        document.getElementById(dropClick).style.backgroundColor="#396622";
+        document.getElementById(dropClick).style.backgroundColor=primary;
         document.getElementById(dropClick).style.color="white";
         document.getElementById(dropID).style.display="none";
         document.getElementById(dropClick).style.marginBottom="5%";
@@ -196,14 +203,14 @@ function dropdown(dropID, dropClick) {
 }
 
 function menuHover(e) {
-    e.style.backgroundColor = "#ebebeb";
-    e.style.color = "#4e3024";
+    e.style.backgroundColor = secondary;
+    e.style.color = gray;
     e.style.cursor = "pointer";
 }
 
 function menuUnHover(e, dropID) {
     if (!openArr.includes(dropID)) {
-        e.style.backgroundColor = "#396622";
+        e.style.backgroundColor = primary;
         e.style.color = "white";
         e.style.cursor = "default";
     }
@@ -219,7 +226,7 @@ function closeChecker(e) { //checks and filters external window taps to figure o
     var anyOpen = false;
     openables.forEach(function(subArr) {
         if ((e.target != document.getElementById(subArr[1])) & (e.target != subArr[0])) {
-            subArr[0].style.backgroundColor="#396622";
+            subArr[0].style.backgroundColor=primary;
             subArr[0].style.color="white";
             subArr[0].style.marginBottom="5%";
             document.getElementById(subArr[1]).style.display="none";
@@ -276,6 +283,16 @@ window.addEventListener("click", function(e) {
 
 function gotolink(link) {
     window.open(link, "_self");
+}
+
+function togGroup(groupID) {
+    if (document.getElementById(groupID + "-box").innerHTML == "-") {
+        document.getElementById(groupID).style.display="none";
+        document.getElementById(groupID + "-box").innerHTML = "+";
+    } else {
+        document.getElementById(groupID).style.display="block";
+        document.getElementById(groupID + "-box").innerHTML = "-";
+    }
 }
 
 //Search/browse below
