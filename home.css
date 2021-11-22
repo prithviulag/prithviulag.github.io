@@ -211,10 +211,10 @@ body {
 
 #logo {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 2.5%;
     padding-left: 5%;
     padding-right: 5%;
-    width: 25%;
+    width: 35%;
     background-color: rgba(235, 235, 235, 0.8);
 }
 
@@ -422,7 +422,7 @@ iframe {
 
     #logo {
         margin-right:0;
-        width: 50%;
+        width: 70%;
         overflow: hidden;
     }
 
