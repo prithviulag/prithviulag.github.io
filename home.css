@@ -213,6 +213,14 @@ body {
     background-color: rgba(235, 235, 235, 0.8);
 }
 
+#logo2 {
+    margin-top: 0;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 30%;
+    background-color: rgba(235, 235, 235, 0.8);
+}
 /* SOCIALS 
 
 DEACTIVATED due to ugliness 
@@ -257,6 +265,11 @@ DEACTIVATED due to ugliness
     width: 100%;
     text-align: center;
     background-color: rgba(0,0,0,0.5);
+}
+
+.contenttext2 {
+    color: #396622;
+    background-color: transparent;
 }
 
 .topic {
@@ -404,6 +417,12 @@ iframe {
     #logo {
         margin-right:0;
         width: 50%;
+        overflow: hidden;
+    }
+
+    #logo2 {
+        margin-right:0;
+        width: 60%;
         overflow: hidden;
     }
 

@@ -274,6 +274,10 @@ window.addEventListener("click", function(e) {
     //simplified method commented out, as links still open, and it is better to have dropdowns close upon click
 }) 
 
+function gotolink(link) {
+    window.open(link, "_self");
+}
+
 //Search/browse below
     // ADD SUPPORT FOR ALL PUNCTUATION (like apost) LATER
 function browse() {
