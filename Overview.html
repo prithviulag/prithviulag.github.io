@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Prithvi Ulaganathan website overview"/>
         <title>Prithvi Ulaganathan</title>
         <link rel="stylesheet" type="text/css" href="home.css"/>
         <link rel="icon" type="image/png" href="images/PrithviUFavicon.png"/>
     </head>
 <body>
     <div id="header">
-        <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFavicon.png"></a>
-        <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownA')" onload="initOpenables(this, 'dropdownA')" >My Profile</a>
+        <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFavicon.png" alt="UP icon"></a>
+        <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownA')" onload="initOpenables(this, 'dropdownA')">My Profile</a>
         <div class="headItem" id="dropdownA" style="display:none;">
             <ul class="droplist">
                 <a href="Experience.html"><li class="drop_item">Experience</li></a>
@@ -26,12 +27,12 @@
                 <a href="Contact.html"><li class="drop_item">Contact</li></a>
             </ul>
         </div>
-        <div id="srch"><input type="text" placeholder="Browse" name="browse" id="browsebar"><img src="images/SearchIcon.png" id="search" onmousedown="browse()"></div>
+        <div id="srch"><input type="text" placeholder="Browse" name="browse" id="browsebar"><img src="images/SearchIcon.png" id="search" onmousedown="browse()" alt="search"></div>
     </div>
 
     <div style="background-image:url(images/IMG_7756.jpg);" id="top">
         <div id="gradient">
-            <a href="index.html"><img id="logo" src="images/PrithviUSmall.png"></a>
+            <a href="index.html"><img id="logo" src="images/PrithviUSmall.png" alt="logo"></a>
             <h1 class="topic" style="margin-top:0;">Overview</h1>
         </div>
     </div>
@@ -40,6 +41,7 @@
         
     </div>
 
+    <!--
     <div id="popup" style="display:none;">
         <div id="popupInset">
             <div id="popupTitle" class="topic">
@@ -52,6 +54,7 @@
             <div id="tagDisplay" style="display:none;">Tags: </div>
         </div>
     </div>
+    -->
 
     <script src="scripts/home.js"></script>
 </body>
