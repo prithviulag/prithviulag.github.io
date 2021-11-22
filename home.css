@@ -389,6 +389,10 @@ iframe {
     margin-top: 1%;
 }
 
+.toggHeader:hover {
+    cursor: pointer;
+}
+
 .subheading {
     margin: 0;
     background-color: rgba(0,0,0,0.5);
