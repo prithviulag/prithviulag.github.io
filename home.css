@@ -421,7 +421,8 @@ iframe {
 
 .closeGroup:hover {
     cursor: pointer;
-    color: var(--primary);
+    color: #396622;
+    color: var(--primary); 
 }
 
 .togglableGroup {
@@ -437,6 +438,7 @@ iframe {
 .subtext, .subtext2 {
     font-size: 1.1em;
     padding: 0.5% 2%;
+    color: #4e3024;
     color: var(--gray);
 }
 
@@ -449,6 +451,7 @@ iframe {
     .subtext, .subtext2 {
         font-size: 1.1em;
         padding: 0.5% 4%;
+        color: #4e3024;
         color: var(--gray);
     }
     
