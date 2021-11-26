@@ -40,7 +40,8 @@ a {
 }
 
 body {
-    min-height: 100vh;
+    padding-bottom: 2vh;
+    min-height: 90vh;
     position: relative;
     width: 100%;
     margin: 0px;
@@ -52,7 +53,7 @@ body {
  body::after {
      content: '';
      display: block;
-     height: 50px;
+     height: 10vh;
  }
 
 /* HEADER */
@@ -476,7 +477,7 @@ iframe {
     width: 81%;
     margin-left: auto;
     text-align: center;
-    height: 40px;
+    max-height: 10vh;
 
     font-size: 0.8em;
     color: white;
