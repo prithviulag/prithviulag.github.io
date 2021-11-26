@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
 @font-face {
     font-family: Prompt;
     src: url(fonts/poppins/Poppins-Regular.ttf);
@@ -29,15 +32,16 @@ a {
     --gray: #4e3024;
     --silver: #ccaa88;
     --gray2: #595959;
-    --primary2: #418d20;
+    --primary2: #529232;
+    --gray3: #44413f;
 }
 
 body {
     width: 100%;
     margin: 0px;
-    background-color: #ebebeb;
-    background-color: var(--secondary);
-    font-family:"Prompt", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #44413f;
+    background-color: var(--gray3);
+    font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* HEADER */
@@ -50,10 +54,12 @@ body {
     width: 15%;
     height: 150%;
 
-    font-family: "Prompt";
+    font-family: "Raleway";
     background-color: #396622;
     background-color: var(--primary);
     padding: 10% 2%;
+
+    box-shadow: 0px 0px 10px black;
 }
 
 .headItem {
@@ -209,25 +215,25 @@ body {
 #gradient {
     display: block;
     padding-bottom: 5%;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), transparent)
+    background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5))
 }
 
 #logo {
     margin-top: 0;
     margin-bottom: 2.5%;
-    padding-left: 5%;
     padding-right: 5%;
     width: 33%;
     background-color: rgba(235, 235, 235, 0.8);
+    background-color: transparent;
 }
 
 #logo2 {
     margin-top: 0;
     margin-bottom: 2%;
-    padding-left: 5%;
     padding-right: 5%;
     width: 30%;
     background-color: rgba(235, 235, 235, 0.8);
+    background-color: transparent;
 }
 /* SOCIALS 
 
@@ -281,7 +287,7 @@ DEACTIVATED due to ugliness
 }
 
 .topic {
-    font-family: "Bebas";
+    font-weight: 600;
     margin-bottom: 0;
     font-size: 2.1em;
 }
@@ -316,13 +322,14 @@ iframe {
 }
 
 .desc {
-    background-color: black;
+    background: linear-gradient(90deg, #000000dd, #000000aa);
     color: white;
-    font-family: "Prompt-Bold";
-    opacity: 0.75;
-    text-align: center;
-    margin:0px;
-    margin-top: 15em;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding-left: 0.5em;
+    font-size: 2em;
+    height: 30vw;
 }
 
 #popup {
@@ -402,7 +409,7 @@ iframe {
     margin: 0;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
-    font-family: "Prompt-Bold";
+    font-weight: 600;
     padding: 0.5% 2%;
     color: white;
     width: 95%;
@@ -413,7 +420,7 @@ iframe {
     align-self: center;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
-    font-family: "Prompt-Bold";
+    font-weight: 600;
     padding: 0.5% 2%;
     color: white;
     width: 5%;
@@ -421,18 +428,19 @@ iframe {
 
 .closeGroup:hover {
     cursor: pointer;
-    color: #396622;
-    color: var(--primary); 
+    color: #529232;
+    color: var(--primary2); 
 }
 
 .togglableGroup {
-    border: 1em solid rgba(0,0,0, 0.8);
+    padding: 1em 0em;
+    background-color: #5a5754;
 }
 
 .subheading2 {
     padding: 0.5% 2%;
-    color: #396622;
-    color: var(--primary); 
+    color: #529232;
+    color: var(--primary2);
 }
 
 .subtext, .subtext2 {
@@ -440,6 +448,7 @@ iframe {
     padding: 0.5% 2%;
     color: #4e3024;
     color: var(--gray);
+    color: white;
 }
 
 .subtext2 {
@@ -451,8 +460,6 @@ iframe {
     .subtext, .subtext2 {
         font-size: 1.1em;
         padding: 0.5% 4%;
-        color: #4e3024;
-        color: var(--gray);
     }
     
     .subtext2 {
@@ -511,6 +518,10 @@ iframe {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .desc {
+        font-size: 1.3em;
     }
 
     iframe {

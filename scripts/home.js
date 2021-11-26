@@ -415,12 +415,11 @@ document.getElementById("browsebar").addEventListener("keypress", function(e) {
 //Gallery stuff below
 
 function highlight(i) {
-    i.children[0].style.opacity="1";
+    i.children[0].style.background="linear-gradient(90deg, #000000ff, #000000aa)";
 }
 
 function unlight(img) {
-    img.children[0].style.opacity="0.75";
-    img.children[0].style.borderRadius="0 0 0 0";
+    img.children[0].style.background="linear-gradient(90deg, #000000dd, #000000aa)";
 }
 
 function larger(img, category) { //for home page
