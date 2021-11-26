@@ -34,13 +34,13 @@ a {
     --gray2: #595959;
     --primary2: #529232;
     --gray3: #44413f;
-    --gray3: #3b3530;
+    --gray3: #3b302a;
 }
 
 body {
     width: 100%;
     margin: 0px;
-    background-color: #3b3530;
+    background-color: #3b302a;
     background-color: var(--gray3);
     font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -436,7 +436,7 @@ iframe {
 
 .togglableGroup {
     padding: 0.5em 0em;
-    background-color: #5c5653;
+    background-color: #4d3427;
     box-shadow: 0px 0px 4px black;
 }
 
