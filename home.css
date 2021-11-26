@@ -142,8 +142,6 @@ body {
 #header_logo {
     height: 3em;
     margin: auto auto;
-    border: 4px solid #ccaa88;
-    border: 4px solid var(--silver);
 }
 
 
