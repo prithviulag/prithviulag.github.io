@@ -34,13 +34,13 @@ a {
     --gray2: #595959;
     --primary2: #529232;
     --gray3: #44413f;
-    --gray3: #3b302a;
+    --gray3: #30221b;
 }
 
 body {
     width: 100%;
     margin: 0px;
-    background-color: #3b302a;
+    background-color: #30221b;
     background-color: var(--gray3);
     font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -436,7 +436,7 @@ iframe {
 
 .togglableGroup {
     padding: 0.5em 0em;
-    background-color: #4d3427;
+    background-color: #3f3129;
     box-shadow: 0px 0px 4px black;
 }
 
@@ -537,6 +537,10 @@ iframe {
         width: 80%;
         left: 10%;
         right: 10%;
+    }
+
+    .toggHeader {
+        margin-top: 2.5%;
     }
 } 
 
