@@ -40,9 +40,6 @@ a {
 }
 
 body {
-    padding-bottom: 2vh;
-    min-height: 90vh;
-    position: relative;
     width: 100%;
     margin: 0px;
     background-color: #2e211a;
@@ -50,7 +47,7 @@ body {
     font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
- body::after {
+#content::after {
      content: '';
      display: block;
      height: 10vh;
@@ -278,6 +275,7 @@ DEACTIVATED due to ugliness
 /* CONTENT */
 
 #content {
+    position: relative;
     margin: auto auto;
     width: 81%;
     margin-right: 0;
@@ -472,7 +470,7 @@ iframe {
     position:absolute;
     bottom: 0;
     right: 0;
-    width: 81%;
+    width: 100%;
     margin-left: auto;
     text-align: center;
     max-height: 10vh;
