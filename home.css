@@ -35,6 +35,8 @@ a {
     --primary2: #529232;
     --gray3: #44413f;
     --gray3: #2e211a;
+    --gray4: #3f3129;
+    --darkgreen: #1b241c;
 }
 
 body {
@@ -436,7 +438,8 @@ iframe {
 
 .togglableGroup {
     padding: 0.5em 0em;
-    background-color: #3f3129;
+    background-color: #1b241c;
+    background-color: var(--darkgreen);
     box-shadow: 0px 0px 4px black;
 }
 
@@ -456,6 +459,21 @@ iframe {
 
 .subtext2 {
     padding-left: 5%;
+}
+
+#footer {
+    width: 81%;
+    margin-left: auto;
+    text-align: center;
+    padding: 0.05em 0em;
+
+    font-size: 0.8em;
+    color: white;
+    background-color: var(--gray4);
+    background-color: #1b241c;
+    box-shadow: 0px 0px 10px #1b241c;
+    background-color: var(--darkgreen);
+    box-shadow: 0px 0px 10px var(--darkgreen);
 }
 
 @media (max-aspect-ratio: 1/1), (max-width: 770px) {
