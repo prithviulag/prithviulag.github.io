@@ -34,13 +34,13 @@ a {
     --gray2: #595959;
     --primary2: #529232;
     --gray3: #44413f;
-    --gray3: #30221b;
+    --gray3: #2e211a;
 }
 
 body {
     width: 100%;
     margin: 0px;
-    background-color: #30221b;
+    background-color: #2e211a;
     background-color: var(--gray3);
     font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
