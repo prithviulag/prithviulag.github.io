@@ -46,12 +46,12 @@ cssVars({
 
 var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what the program knows to avoid)
     "General_Keywords": [
-        "art", "painting", "paint", "arts", "artist", "Shanthi", "Manickam", "Shan", "Gallery", "Collection", "Galleries", "Collections"
+        "Prithvi", "Ulaganathan"
     ],
     "Collections": [
         {
-            "name": "Flowers",
-            "directory": "images/Flowers/", 
+            "name": "Experience",
+            "directory": "Experience.html/", 
             "contents": [
                 {
                     "name": "Magnolia Blossoms",
@@ -66,8 +66,8 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             ]
         },
         {
-            "name": "Landscapes",
-            "directory": "images/Landscapes/",
+            "name": "Skills",
+            "directory": "Skills.html/",
             "contents": [
                 {
                     "name": "Winter Trees",
@@ -97,8 +97,8 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             ]
         },
         {
-            "name": "Plein_Air",
-            "directory": "images/Plein_Air/",
+            "name": "Organizations",
+            "directory": "Organizations.html/",
             "contents": [
                 {
                     "name": "_",
@@ -108,24 +108,24 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             ]
         },
         {
-            "name": "Portraits",
-            "directory": "images/Portraits/",
+            "name": "Projects",
+            "directory": "Projects.html/",
             "contents": [
                 {
-                    "name": "Quaint Smile",
-                    "src": "IMG_0036.jpg",
-                    "tags": ["Woman", "Person"]
+                    "name": "Discovery Project",
+                    "src": "#projects-1-box",
+                    "tags": ["ECE", "Soldering", "CAD", "PCB"]
                 },
                 {
-                    "name": "White Dog",
-                    "src": "IMG_7967.jpg",
-                    "tags": ["Animal", "Fluffy"]
+                    "name": "HTML CSS JavaScript Exploration",
+                    "src": "#projects-2-box",
+                    "tags": ["HTML", "CSS", "JS", "Website"]
                 }
             ]
         },
         {
-            "name": "Still_Life",
-            "directory": "images/Still_Life/",
+            "name": "Future Goals",
+            "directory": "Goals.html/",
             "contents": [
                 {
                     "name": "Frog",
