@@ -50,7 +50,7 @@
 }
 
 .resImg {
-    width: 24.5%;
+    width: 12em;
     margin: 0.25%;
     color: white;
     background-size: cover;
@@ -58,6 +58,7 @@
 
 .resImgG {
     padding: 5em 0em;
+    text-align: center;
     background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
     align-self: center;
 }
