@@ -10,7 +10,7 @@
     --primary2: #529232;
     --gray3: #44413f;
     --gray3: #2e211a;
-    --gray3: #a38669;
+    --gray3: #706854;
     --gray4: #3f3223;
     --darkgreen: #1b241c;
 }
@@ -19,12 +19,19 @@
     display: flex;
     background-color: #1b241c;
     background-color: var(--darkgreen);
+    background-image: url("images/IMG_7756.jpg");
     box-shadow: 0px 0px 4px black;
 }
 
+#gradient {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0px;
+}
+
 #toptext {
-    color: #ccaa88;
-    color: var(--silver);
+    color: #529232;
+    color: var(--primary2);
     font-family: "Raleway";
     font-size: 1.6em;
     text-align: left;
