@@ -16,9 +16,6 @@
 }
 
 #top {
-    width: 81%;
-    margin-right: 0;
-    padding: 1em;
     display: flex;
     background-color: #1b241c;
     background-color: var(--darkgreen);
@@ -36,6 +33,7 @@
 }
 
 #topindicator {
+    padding-left: 0.5em;
     color: white;
     font-family: "Raleway";
     font-size: 1.6em;
