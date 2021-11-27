@@ -35,7 +35,7 @@ a {
     --primary2: #529232;
     --gray3: #44413f;
     --gray3: #2e211a;
-    --gray3: #312922;
+    --gray3: #29201e;
     --gray4: #3f3223;
     --darkgreen: #1b241c;
 }
@@ -43,7 +43,7 @@ a {
 body {
     width: 100%;
     margin: 0px;
-    background-color: #2e211a;
+    background-color: #24271f;
     background-color: var(--gray3);
     font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
