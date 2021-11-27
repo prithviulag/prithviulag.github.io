@@ -211,7 +211,7 @@ function menuHover(e) {
 }
 
 function menuUnHover(e, dropID) {
-    if (!openArr.includes(dropID)) {
+    if (openArr.indexOf(dropID) == -1) {
         e.style.backgroundColor = primary;
         e.style.color = "white";
         e.style.cursor = "default";
@@ -450,11 +450,11 @@ function toggOpenCheck(pageID) {
 //Gallery stuff below
 
 function highlight(i) {
-    i.children[0].style.background="linear-gradient(90deg, #000000ff, #000000aa)";
+    i.children[0].style.background="linear-gradient(90deg, rgba(0, 0, 0, 1.00), rgba(0, 0, 0, 0.67))";
 }
 
 function unlight(img) {
-    img.children[0].style.background="linear-gradient(90deg, #000000dd, #000000aa)";
+    img.children[0].style.background="linear-gradient(90deg, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.67))";
 }
 
 /* THESE ARE ALL CURRENTLY UNUSED; THE INNERHTML TAGS MUST BE REMOVED BEFORE USE

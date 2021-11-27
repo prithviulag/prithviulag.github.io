@@ -35,7 +35,7 @@ a {
     --primary2: #529232;
     --gray3: #44413f;
     --gray3: #2e211a;
-    --gray3: #968b7a;
+    --gray3: #74675c;
     --gray4: #3f3223;
     --darkgreen: #1b241c;
 }
@@ -44,7 +44,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0px;
-    background-color: #968b7a;
+    background-color: #74675c;
     background-color: var(--gray3);
     font-family:"Raleway", "Trebuchet MS", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -58,6 +58,7 @@ p {
     padding: 0px;
     position: relative;
     min-height: 100vh;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), transparent);
 }
 
 /* HEADER */

@@ -10,7 +10,7 @@
     --primary2: #529232;
     --gray3: #44413f;
     --gray3: #2e211a;
-    --gray3: #968b7a;
+    --gray3: #74675c;
     --gray4: #3f3223;
     --darkgreen: #1b241c;
 }
@@ -56,21 +56,23 @@
 
 .resImg {
     width: 12em;
+    height: max-content;
     margin: 0.25%;
     color: white;
     background-size: cover;
 }
 
 .resImgG {
+    width: 100%;
     padding: 5em 0em;
     text-align: center;
     background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
     align-self: center;
 }
 
-.resImg:hover {
+.resImgG:hover {
     cursor:pointer;
-    filter: brightness(50%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.95), rgba(0,0,0,0.5));
 }
 
 #noResAlert {
