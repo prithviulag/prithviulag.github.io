@@ -4,46 +4,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>__under__construction__</title>
         <link rel="stylesheet" type="text/css" href="home.css"/>
+        <link rel="stylesheet" type="text/css" href="browse.css"/>
         <!--<link rel="stylesheet" type="text/css" href="browse.css"/>-->
         <link rel="icon" type="image/png" href="images/PrithviUFaviconBorder.png"/>
     </head>
 <body onload="browseSite()">
     <div id="header">
-        <a class="headItem" id="dropA">Collections<img id="dropdownAimg" src="images/DropdownIcon.png"/></a>
-        <a class="headItem" id="dropB">About<img id="dropdownBimg" src="images/DropdownIcon.png"/></a>
-        <input type="text" placeholder="Browse" name="browse" id="browsebar">
-        <img class="headItem" src="images/SearchIcon.png" id="search" onclick="browse()">
-        <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFavicon.png"></a>
-    </div>
-
-    <div id="dropdownA" style="display:none;">
-        <ul class="droplist">
-            <a href="galleries/Flowers.html"><li class="drop_item">Flowers</li></a>
-            <a href="galleries/Landscapes.html"><li class="drop_item">Landscapes</li></a>
-            <a href="galleries/Plein_Air.html"><li class="drop_item">Plein Air</li></a>
-            <a href="galleries/Portraits.html"><li class="drop_item">Portraits</li></a>
-            <a href="galleries/Still_Life.html"><li class="drop_item">Still Life</li></a>
-        </ul>
-    </div>
-    <div id="dropdownB" style="display:none;">
-        <ul class="droplist">
-            <a href="about/PLACEHOLDER.html"><li class="drop_item">PLACEHOLDER</li></a>
-            <a href="about/Contact.html"><li class="drop_item">Contact</li></a>
-        </ul>
-        <!--<div id="socials">
-            <a class="sociallink" href="https://www.instagram.com/shanthiartist/" target="_blank"><img class="socialmedia" src="images/instagram.png" alt="Instagram"/></a>
-            <a class="sociallink" href="https://www.facebook.com/shanthi.manickam" target="_blank"><img class="socialmedia" src="images/facebook.png" alt="Facebook"/></a>
-        </div>-->
+        <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFaviconBorder.png" alt="UP icon"></a>
+        <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownA')" onload="initOpenables(this, 'dropdownA')" >My Profile</a>
+        <div class="headItem" id="dropdownA" style="display:none;">
+            <ul class="droplist">
+                <a href="Experience.html"><li class="drop_item">Experience</li></a>
+                <a href="Skills.html"><li class="drop_item">Skills</li></a>
+                <a href="Organizations.html"><li class="drop_item">Organizations</li></a>
+                <a href="Projects.html"><li class="drop_item">Projects</li></a>
+                <a href="Goals.html"><li class="drop_item">Future Goals</li></a>
+            </ul>
+        </div>
+        <a class="headItem" id="dropB" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownB')" onload="initOpenables(this, 'dropdownB')">About</a>
+        <div class="headItem" id="dropdownB" style="display:none;">
+            <ul class="droplist">
+                <a href="Overview.html"><li class="drop_item">Overview</li></a>
+                <a href="Contact.html"><li class="drop_item">Contact</li></a>
+            </ul>
+        </div>
+        <div id="srch"><input type="text" placeholder="Browse" name="browse" id="browsebar"><img src="images/SearchIcon.png" id="search" onmousedown="browse()" alt="search"></div>
     </div>
 
     <div id="top">
         <h1 id="topindicator">Search:</h1><h1 id="toptext"></h1>
     </div>
-
-    <p id="noResAlert" style="display:none;">There appear to be no results, or a word might be misspelled. Try a different query.</p>
     
     <div id="content">
-        <!--resImg[ind] id images go in here, created by js-->
+        <p id="noResAlert" style="display:none;">There appear to be no results, or a word might be misspelled. Try a different query.</p>
+        <div id="imageZone">
+            <!--resImg[ind] id images go in here, created by js-->
+        </div>
+        <div id="footer">
+            <p>designed with a <span style="color:darkred">Desert</span> <span style="color:springgreen">Grass</span> aesthetic concept.</p>
+        </div>
     </div>
 
     <div id="popup" style="display:none;">
@@ -58,9 +57,7 @@
             <div id="tagDisplay">Tags: </div>
         </div>
     </div>
-    <div id="footer">
-        <p>designed with a <span style="color:darkred">Desert</span> <span style="color:springgreen">Grass</span> aesthetic concept.</p>
-    </div>
+
     <script src="scripts/home.js"></script>
 </body>
 </html>

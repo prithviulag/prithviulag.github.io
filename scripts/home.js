@@ -51,7 +51,7 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
     "Collections": [
         {
             "name": "Experience",
-            "directory": "Experience.html/", 
+            "directory": "Experience.html", 
             "contents": [
                 {
                     "name": "Magnolia Blossoms",
@@ -67,7 +67,7 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
         },
         {
             "name": "Skills",
-            "directory": "Skills.html/",
+            "directory": "Skills.html",
             "contents": [
                 {
                     "name": "Winter Trees",
@@ -98,7 +98,7 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
         },
         {
             "name": "Organizations",
-            "directory": "Organizations.html/",
+            "directory": "Organizations.html",
             "contents": [
                 {
                     "name": "_",
@@ -109,23 +109,25 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
         },
         {
             "name": "Projects",
-            "directory": "Projects.html/",
+            "directory": "Projects.html",
             "contents": [
                 {
                     "name": "Discovery Project",
-                    "src": "#projects-1-box",
+                    "link": "#projects-1-box",
+                    "src": "IMG_8078.jpg",
                     "tags": ["ECE", "Soldering", "CAD", "PCB"]
                 },
                 {
                     "name": "HTML CSS JavaScript Exploration",
-                    "src": "#projects-2-box",
+                    "link": "#projects-2-box",
+                    "src": "IMG_7756.jpg",
                     "tags": ["HTML", "CSS", "JS", "Website"]
                 }
             ]
         },
         {
             "name": "Future Goals",
-            "directory": "Goals.html/",
+            "directory": "Goals.html",
             "contents": [
                 {
                     "name": "Frog",
@@ -286,13 +288,31 @@ function gotolink(link) {
 }
 
 function togGroup(groupID) {
-    if (document.getElementById(groupID + "-box").innerHTML == "-") {
+    if (document.getElementById(groupID).style.display != "none") {
         document.getElementById(groupID).style.display="none";
-        document.getElementById(groupID + "-box").innerHTML = "+";
+        document.getElementById(groupID + "-box").textContent = "+";
     } else {
         document.getElementById(groupID).style.display="block";
-        document.getElementById(groupID + "-box").innerHTML = "-";
+        document.getElementById(groupID + "-box").textContent = "-";
     }
+}
+
+function togGroup2(groupID) { //For links from browse.html ONLY
+    var allGroupColl = document.getElementsByClassName("togglableGroup");
+    var allGroupArr = [];
+    for (var i = 0; i < allGroupColl.length; i++) {
+        try {
+            allGroupArr.push(allGroupColl[i].id);
+        } catch (error) {
+        }
+    }
+    allGroupArr.forEach(function(g) {
+        console.log(document.getElementById(g + "-box").textContent)
+        document.getElementById(g).style.display="none";
+        document.getElementById(g + "-box").textContent = "+";
+    })
+    document.getElementById(groupID + "-box").textContent = "-";
+    document.getElementById(groupID).style.display="block";
 }
 
 //Search/browse below
@@ -313,7 +333,7 @@ function browse() {
 function browseSite() {
     var ind = document.URL.indexOf("?index=") + 7;
     var browseQuery = document.URL.slice(ind,document.URL.length).replace(/_/g, ' ').replace(/-/g, ' ');
-    document.getElementById("toptext").innerHTML = browseQuery;
+    document.getElementById("toptext").textContent = browseQuery;
 
     //below is prototype, extremely basic search THROUGH INDIVIDUAL PAINTINGS
 
@@ -370,7 +390,7 @@ function browseSite() {
             });
 
             if ((matchScore > 0) && (artwork.src != "_")) {
-                res.push([matchScore, artwork.src, collections.Collections[i].directory, artwork.name, artwork.tags]);
+                res.push([matchScore, artwork.src, artwork.name, collections.Collections[i].directory, artwork.link]);
             }
         });
         //THIS SORTING NOW WORKS WITHIN A COLLECTION; for example, "cherry full bloom" works sorted, but not "cherry quaint smile"
@@ -383,11 +403,16 @@ function browseSite() {
     } else {
         ind = 0;
         res.forEach(function(artworkArr) {
-            resImg = document.createElement("img");
+            resImg = document.createElement("div");
+            resImgG = document.createElement("div");
             resImg.classList.add("resImg");
+            resImgG.classList.add("resImgG");
             resImg.id = "resImg" + ind;
-            resImg.src = artworkArr[2] + artworkArr[1];
+            resImgG.id = "resImgG" + ind;
+            resImg.style.backgroundImage = "url('images/" + artworkArr[1] + "')";
+            resImgG.textContent = artworkArr[2];
             
+            /*
             element4Str = "[]";
             if (artworkArr[4].length > 0){ //to parse the tag array into a str with apost. to put into "onmousedown"
                 element4Str = "[";
@@ -397,9 +422,11 @@ function browseSite() {
                 element4Str = element4Str.slice(0,-1);
                 element4Str += "]";
             }
+            */
             
-            resImg.setAttribute("onmousedown", "largerMod(this, '" + artworkArr[2].slice(7,-1) + "','" + artworkArr[3] + "'," + element4Str + ")");
-            document.getElementById("content").appendChild(resImg);
+            resImg.setAttribute("onmousedown", "gotolink('" + artworkArr[3] + artworkArr[4] + "')");
+            resImg.appendChild(resImgG);
+            document.getElementById("imageZone").appendChild(resImg);
             ind++;
         });
     }  
@@ -412,6 +439,14 @@ document.getElementById("browsebar").addEventListener("keypress", function(e) {
     }
 })
 
+function toggOpenCheck(pageID) {
+    lnk = document.URL;
+    if (lnk.indexOf("#") != -1) {
+        num = lnk[lnk.indexOf(pageID) + pageID.length];
+        togGroup2(pageID + num);
+    }
+}
+
 //Gallery stuff below
 
 function highlight(i) {
@@ -422,6 +457,7 @@ function unlight(img) {
     img.children[0].style.background="linear-gradient(90deg, #000000dd, #000000aa)";
 }
 
+/* THESE ARE ALL CURRENTLY UNUSED; THE INNERHTML TAGS MUST BE REMOVED BEFORE USE
 function larger(img, category) { //for home page
     var useimage = img.style.backgroundImage.slice(5,-2);
     var usetitle = img.children[0].innerHTML;
@@ -472,3 +508,4 @@ function closeLarger() {
 function tagBrowse(searchTag) { //for clicking on a tag in a popup
     window.open("browse.html" + "?index=" + searchTag, "_self");
 }
+*/
