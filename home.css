@@ -474,6 +474,23 @@ iframe {
     padding-left: 5%;
 }
 
+#contentIMGdiv {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+#contentImg {
+    max-height: 100%;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
 #footer {
     position:absolute;
     bottom: 0;

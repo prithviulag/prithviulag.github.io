@@ -46,9 +46,34 @@
             </p>
             <h2 class="subheading2">>> Design Stage | Eagle PCB</h2>
                 <p class="subtext2">
-                    Central to designing a PCB is the CAD software used to select parts and create a layout. Upon the recommendation of other ECE majors and my peer leader from ECE 1100, I decided to introduce myself to Eagle PCB using online tutorials with the goal of completing a simple PCB.
+                    Central to designing a PCB is the CAD software used to select parts and create a layout. Upon the recommendation of other ECE majors and my peer leader from ECE 1100, I decided to introduce myself to Eagle PCB using online tutorials, with the goal of designing a PCB schematic and board.
                     <br><br>
-                    After an overview of the basics of Eagle, I decided to make use of the soldering training board designed by Robojackets, which I would later physically solder at the Hive, to practice designing something in Eagle without a 1:1 video tutorial. 
+                    I started by downloading the Eagle software and doing some preliminary research into its use, including watching tutorial videos, I decided to make use of the soldering training board designed by Robojackets, which I would later physically solder at the Hive, to practice designing something in Eagle without a 1:1 video tutorial. 
+                    <br><br>
+                    The first step was to create a schematic (.sch) file and select all of the parts. While several of the parts, particularly the simple resistors, capacitors, and LEDs, were available within the pre-downloaded Eagle libraries, many of the more unique parts for the project were not available. I used the minimal information provided on the training PDF to Google each missing part and find the correct one.
+                    <br><br>
+                    I ended up finding most of the required models, symbols, and footprints on SnapEDA, but two, the fuse (F1) and the MOSFET (Q1), had to be downloaded from separate websites. I decided not to consolidate the libraries to keep track of where each part came from.
+                </p>
+                <div id="contentIMGdiv">
+                    <img id="contentImg" src="images/Downloadeds.PNG">
+                    <img id="contentImg" src="images/snapEDAlib.PNG">
+                </div>
+                <p class="subtext2 caption">
+                    Left: the 3 user-provided libaries I used. <br> Right: the SnapEDA library I downloaded.
+                </p>
+                <p class="subtext2">
+                    <br>
+                    Designing the schematic presented the challenge of interpreting the images provided for the soldering training, which were not exact schematics. After placing down all of the parts, I first placed all of the nets with 90-degree angles. I then decided to try again with the 45-degree and direct-connect Wire Bend settings to practice. The first fully-connected schematic I saved used 45-degree traces.
+                </p>
+                <div id="contentIMGdiv" style="height:45vw;">
+                    <img id="contentImg" src="images/firstRunSch.jpg">
+                </div>
+                <p class="subtext2 caption">
+                    The first draft of the schematic, with 45-degree trace angles.
+                </p>
+                <p class="subtext2">
+                    <br>
+                    The next step was to start the board. I initially faced some challenges with accidentally closing the board and making a change to the schematic, resulting in a severance of the connection between the two. However, I ended up following through with placing all of the components in their correct spots, drawing in the traces without same-side overlap, adding in through holes, and completing the copper pour.
                 </p>
             <h2 class="subheading2">>> Hands-On Stage | PCB Soldering Training</h2>
                 <p class="subtext2">
