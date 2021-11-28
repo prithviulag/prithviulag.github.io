@@ -175,7 +175,6 @@ try {
 changeScreenSize(mediaQuery);
 
 function initOpenables(e, dropdown){ //currently not working, figure out what's the issue
-    console.log("check");
     openables.push([e, dropdown]);
 }
 
@@ -307,7 +306,6 @@ function togGroup2(groupID) { //For links from browse.html ONLY
         }
     }
     allGroupArr.forEach(function(g) {
-        console.log(document.getElementById(g + "-box").textContent)
         document.getElementById(g).style.display="none";
         document.getElementById(g + "-box").textContent = "+";
     })

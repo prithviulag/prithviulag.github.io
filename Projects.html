@@ -63,22 +63,45 @@
                 </p>
                 <p class="subtext2">
                     <br>
-                    Designing the schematic presented the challenge of interpreting the images provided for the soldering training, which were not exact schematics. After placing down all of the parts, I first placed all of the nets with 90-degree angles. I then decided to try again with the 45-degree and direct-connect Wire Bend settings to practice. The first fully-connected schematic I saved used 45-degree traces.
+                    Designing the schematic presented the challenge of interpreting the images provided for the soldering training, which were not exact schematics. After placing down all of the parts, I completed a first run through of adding all of the nets, also including nets on leads that were grounded using a trace leading to a through-hole. 
                 </p>
                 <div id="contentIMGdiv" style="height:45vw;">
-                    <img id="contentImg" src="images/firstRunSch.jpg">
+                    <img id="contentImg" src="images/firstFixedSch.jpg">
                 </div>
                 <p class="subtext2 caption">
-                    The first draft of the schematic, with 45-degree trace angles.
+                    The first complete draft of the schematic, without the extra headers that were not required for the soldering training. This draft came after starting the new board file, as I noticed and fixed some errors only after working on the board.
                 </p>
                 <p class="subtext2">
                     <br>
-                    The next step was to start the board. I initially faced some challenges with accidentally closing the board and making a change to the schematic, resulting in a severance of the connection between the two. However, I ended up following through with placing all of the components in their correct spots, drawing in the traces without same-side overlap, adding in through holes, and completing the copper pour.
+                    The next step was to start the board file. I initially faced some challenges with asynchronous schematic editing, resulting in a severance of the connection between the two. After making sure the board and schematic matched, I ended up following through with placing all of the components in their correct spots, drawing in the traces with 45-degree angles and avoiding same-side overlap, adding in through holes (for grounded components, using vias), and completing the copper pour on the bottom layer.
+                </p>
+                <div id="contentIMGdiv" style="height:45vw;">
+                    <img id="contentImg" src="images/firstRunBoard.jpg">
+                </div>
+                <p class="subtext2 caption">
+                    The first draft of the board, showing the top layer (layer 1 in the editor). The copper pour on the bottom layer is not pictured.
+                </p>
+                <p class="subtext2">
+                    <br>
+                    The IC (part U1) still needed some work at this stage. Under the center of the component was a thermal pad connected to an array of 6 vias/through-holes just below the IC, which I could only add in the board file, not the schematic.
                 </p>
             <h2 class="subheading2">>> Hands-On Stage | PCB Soldering Training</h2>
                 <p class="subtext2">
-                    The hands-on stage of my project involved a Robojackets Soldering Training session at Georgia Tech's Interdisciplinary Design Commons, an ECE makespace run by The Hive, a student organization. As I hope to become a member of The Hive myself, I decided to make use of this training opportunity to become familiar with some of The Hive's resources.
+                    The hands-on stage of my project involved getting to actually participate in the Robojackets Soldering Training session at Georgia Tech's Interdisciplinary Design Commons, an ECE makespace run by The Hive, a student organization. The board actually does have a purpose--when used with an Arduino Uno, it can power a DC motor, if created properly.
+                    <br><br>
+                    The soldering skills required were more complex than the simple through-hole soldering experience I already had. I had to use surface-mount components, many of which were too small to handle without tweezers, which took some getting used to.
                 </p>
+                <div id="contentIMGdiv" style="height:40vw;">
+                    <img id="contentImg" src="images/IMG_8078b.jpg">
+                </div>
+                <p class="subtext2 caption">
+                    The result of the training session: a combination of soldering techniques.
+                </p>
+                <p class="subtext2">
+                    <br>
+                    Unfortunately, the time alotted for the session was not enough time to reach the testing stage with the Arduino. However, I got experience with physical debugging, namely by using the continuity checker and voltage reader of a multimeter to analyze the different connections in my PCB.
+                </p>
+                <br>
         </div>
 
         <div onclick="togGroup('projects-2')" style="background-image:url(images/IMG_7756.jpg)" class="toggHeader"><h1 class="subheading">HTML/CSS/JS Exploration</h1><h1 class="closeGroup" id="projects-2-box">+</h1></div>
