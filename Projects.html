@@ -54,9 +54,9 @@
                     <br><br>
                     I ended up finding most of the required models, symbols, and footprints on SnapEDA, but two, the fuse (F1) and the MOSFET (Q1), had to be downloaded from separate websites. I decided not to consolidate the libraries to keep track of where each part came from.
                 </p>
-                <div id="contentIMGdiv">
-                    <img id="contentImg" src="images/Downloadeds.PNG">
-                    <img id="contentImg" src="images/snapEDAlib.PNG">
+                <div class="contentIMGdiv contentIMGdiv2">
+                    <img class="contentImg" src="images/Downloadeds.PNG">
+                    <img class="contentImg" src="images/snapEDAlib.PNG">
                 </div>
                 <p class="subtext2 caption">
                     Left: the 3 user-provided libaries I used. <br> Right: the SnapEDA library I downloaded.
@@ -65,8 +65,8 @@
                     <br>
                     Designing the schematic presented the challenge of interpreting the images provided for the soldering training, which were not exact schematics. After placing down all of the parts, I completed a first run through of adding all of the nets, also including nets on leads that were grounded using a trace leading to a through-hole.
                 </p>
-                <div id="contentIMGdiv" style="height:35vw;">
-                    <img id="contentImg" src="images/firstFixedSch.jpg">
+                <div class="contentIMGdiv">
+                    <img class="contentImg" src="images/firstFixedSch.jpg">
                 </div>
                 <p class="subtext2 caption">
                     The first complete draft of the schematic, without the extra headers that were not required for the soldering training. This draft came after starting the new board file, as I noticed and fixed some errors only after working on the board.
@@ -75,15 +75,25 @@
                     <br>
                     The next step was to start the board file. I initially faced some challenges with asynchronous schematic editing, resulting in a severance of the connection between the two. After making sure the board and schematic matched, I ended up following through with placing all of the components in their correct spots, drawing in the traces with 45-degree angles and avoiding same-side overlap, adding in through holes and bottom-layer connections, and completing copper pours on both layers.
                 </p>
-                <div id="contentIMGdiv" style="height:35vw;">
-                    <img id="contentImg" src="images/firstCompleteBoard.jpg">
+                <div class="contentIMGdiv">
+                    <img class="contentImg" src="images/firstCompleteBoard.jpg">
                 </div>
                 <p class="subtext2 caption">
                     The complete draft of the board, showing the top (red) layer and bottom (blue) layer traces. The copper pours are not pictured.
                 </p>
                 <p class="subtext2">
                     <br>
-                    The IC (U1) still needed some work at this stage. Under the center of the component was a thermal pad connected to an array of 6 vias/through-holes just below the IC, which I could only add in the board file, not the schematic.
+                    With the board complete, my next step was to export the files for manufacturing (only theoretically, of course; the soldering training would provide the actual board). Using the CAM Processor provided by Eagle, I created Gerber files and an Excellon files and exported them into my project directory. To verify that the Gerbers were properly exported, I first used an online Gerber viewer to perform a cursory check, and then imported each layer into my existing board file to make sure everything lined up. Sure enough, the imported layers matched the board file without throwing any errors.
+                </p>
+                <div class="contentIMGdiv">
+                    <img class="contentImg" src="images/copperCheckBottom.jpg">
+                </div>
+                <p class="subtext2 caption">
+                    The board after importing the copper bottom layer, which highlights the blue bottom-layer traces.
+                </p>
+                <p class="subtext2">
+                    <br>
+                    With the design stage of the project complete, I felt intrigued to learn more about CAD software like Eagle, with my next aim being designing and having manufactured my own PCB design. Learning to use the software was also more enjoyable than I expected, so I felt encouraged to continue exploring and experimenting.
                 </p>
             <h2 class="subheading2">>> Hands-On Stage | PCB Soldering Training</h2>
                 <p class="subtext2">
@@ -91,8 +101,8 @@
                     <br><br>
                     The soldering skills required were more complex than the simple through-hole soldering experience I already had. I had to use surface-mount components, many of which were too small to handle without tweezers, which took some getting used to.
                 </p>
-                <div id="contentIMGdiv" style="height:35vw;">
-                    <img id="contentImg" src="images/IMG_8078b.jpg">
+                <div class="contentIMGdiv">
+                    <img class="contentImg" src="images/IMG_8078b.jpg">
                 </div>
                 <p class="subtext2 caption">
                     The result of the training session: a combination of soldering techniques.
