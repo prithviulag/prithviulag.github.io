@@ -457,21 +457,21 @@ iframe {
 }
 
 .subheading2 {
-    padding: 0.5% 2%;
+    padding: 0.5% 5%;
     color: #529232;
     color: var(--primary2);
 }
 
 .subtext, .subtext2 {
     font-size: 1.1em;
-    padding: 0.5% 2%;
+    padding: 0.5% 7%;
     color: #4e3024;
     color: var(--gray);
     color: white;
 }
 
 .subtext2 {
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 #contentIMGdiv {
