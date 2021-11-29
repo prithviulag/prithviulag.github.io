@@ -35,10 +35,15 @@ a {
     --primary2: #529232;
     --gray3: #44413f;
     --gray3: #2e211a;
-    --gray3: #74675c;
+    --gray3: #867f72;
     --gray4: #3f3223;
     --darkgreen: #1b241c;
 }
+
+/*This website's Desert Grass aesthetic concept was inspired by the light-sierra bark of leafy, spring-green tree canopies.
+
+The addition of a warm tan and a dark, minty green add depth to the basic scheme. 
+*/
 
 body {
     width: 100%;
