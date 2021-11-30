@@ -479,6 +479,10 @@ iframe {
     padding-left: 10%;
 }
 
+.subtext3 {
+    padding-left: 17%;
+}
+
 .contentIMGdiv {
     width: 100%;
     height: 35vw;
@@ -527,6 +531,11 @@ iframe {
     margin-right: 1em;
 }
 
+.smIcon2 {
+    width:4em;
+    margin-right: 1.5em;
+}
+
 #footer {
     position:absolute;
     bottom: 0;
@@ -562,6 +571,10 @@ iframe {
     
     .subtext2 {
         padding-left: 10%;
+    }
+
+    .subtext3 {
+        padding-left: 20%;
     }
 
     #header_logo {

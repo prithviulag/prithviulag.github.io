@@ -54,15 +54,11 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             "directory": "Experience.html", 
             "contents": [
                 {
-                    "name": "Magnolia Blossoms",
-                    "src": "IMG_5466.jpg",
-                    "tags": ["Spring", "Blooms", "Petals"]
+                    "name": "Resume",
+                    "link": "#experience-1-box",
+                    "src": "resume.png",
+                    "tags": ["Resume"]
                 },
-                {
-                    "name": "Full Bloom",
-                    "src": "IMG_5500.jpg",
-                    "tags": ["Petals", "Purple", "Cosmos"]
-                }
             ]
         },
         {
@@ -136,9 +132,40 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             "directory": "Goals.html",
             "contents": [
                 {
-                    "name": "Frog",
-                    "src": "IMG_7016.jpg",
-                    "tags": ["Bird", "Vase", "Animal"]
+                    "name": "Timeline",
+                    "link": "#goals-1-box",
+                    "src": "calendar/summer2022.png",
+                    "tags": ["Plan", "Career", "Planning"]
+                },
+                {
+                    "name": "Budget",
+                    "link": "#goals-2-box",
+                    "src": "calendar/summer2023.png",
+                    "tags": ["Career", "Plan", "Spending"]
+                },
+                {
+                    "name": "Steps",
+                    "link": "#goals-3-box",
+                    "src": "calendar/fall2024.png",
+                    "tags": ["Career", "Planning", "Plan"]
+                }
+            ]
+        },
+        {
+            "name": "Overview",
+            "directory": "Overview.html",
+            "contents": [
+                {
+                    "name": "Summary",
+                    "link": "#overview-1-box",
+                    "src": "summary.png",
+                    "tags": ["Experience", "Projects"]
+                },
+                {
+                    "name": "Bio and Education",
+                    "link": "#overview-2-box",
+                    "src": "skillIcons/gt-seal_0.png",
+                    "tags": ["Georgia", "Tech", "STEM", "Extracurricular"]
                 }
             ]
         }
