@@ -130,7 +130,23 @@
             <h2 class="subheading2">>> Personal Website</h2>
                 <p class="subtext2">
                     This personal website, initially intended for ECE 1100, is a project I have worked on to keep as a long-term, updated catalog of my experience, projects, plans, and overall involvement.
+                    <br><br>
+                    This website is currently built in pure HTML, CSS, and JS, though I plan to use some frameworks to implement some more difficult features. A personal challenge I have been keeping in mind is to make sure that my website stays compatible with IE11, which has led to workarounds for several newer Javascript and CSS features. CSS-Variables, for example, are not supported by IE11, so I currently resort to manually defining all of the colors in the color palette. However, I hope to make use of a <a class="inTxtLink" href="https://www.npmjs.com/package/css-vars-ponyfill" target="_blank">polyfill</a> to streamline the process.
                 </p>
+                <div class="contentIMGdiv contentIMGdiv2">
+                    <img class="contentImg" src="images/cssVarsImg.PNG">
+                    <img class="contentImg" src="images/jsonExample.PNG">
+                </div>
+                <p class="subtext2 caption">
+                    Left: The root CSS variables; note the repeated declaration of --gray3 (I could not make up my mind and wanted to save all three)
+                    <br>
+                    Right: The JS object for this page's searchable sections.
+                </p>
+                <p class="subtext2">
+                    <br>
+                    The search algorithm is also one I have been working on as a way to experiment and explore programming in ways I haven't tried before. Currently, the algorithm loops through specifically-identified sections of pages in a JSON object and scores each one based on closeness to the query, which ignores capitalization, pluralization, and some special characters (', for example). The results then link to the anchor of their respective element, and a JS function opens the correct box based on the URL's anchor.
+                </p>
+                <br>
         </div>
         <div style="height:5em;">
 

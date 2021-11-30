@@ -501,6 +501,14 @@ iframe {
     font-style: italic;
 }
 
+.inTxtLink {
+    color: #8ccc6d;
+}
+
+.inTxtLink:hover {
+    color: black;
+}
+
 #footer {
     position:absolute;
     bottom: 0;
