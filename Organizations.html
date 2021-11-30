@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="home.css"/>
         <link rel="icon" type="image/png" href="images/PrithviUFaviconBorder.png"/>
     </head>
-<body>
+<body onload="toggOpenCheck('organizations-')">
     <div id="header">
         <a class = "headItem" id="header_logo_cont" href="index.html"><img id="header_logo" src="images/PrithviUFavicon.png" alt="UP icon"></a>
         <a class="headItem" id="dropA" onmouseover="menuHover(this)" onmouseout="menuUnHover(this, 'dropdownA')" onload="initOpenables(this, 'dropdownA')">My Profile</a>
@@ -38,9 +38,65 @@
     </div>
 
     <div id="content">
-        
+        <div onclick="togGroup('organizations-1')" style="background-image:url(images/PYTHONOPTIMIZATION.PNG)" class="toggHeader"><h1 class="subheading">GT Solar Racing | <span style="font-size:0.75em;">Auxiliary Systems & Solar MPPT</span></h1><h1 class="closeGroup" id="organizations-1-box">+</h1></div>
+        <div style="display:none;" id="organizations-1" class="togglableGroup">
+            <h2 class="subheading2">Auxiliary Systems Member - SR-4 Lights Project</h2>
+                <p class="subtext2">
+                    - Designed lights for upcoming multi-occupant vehicle (SR-4) in CAD (SolidWorks), making sure to account for component selection and regulations.
+                    <br><br>
+                    - Communicated with several other sub-teams to determine exact placing, specifications, and sizing.
+                </p>
+            <h2 class="subheading2">Solar MPPT Member - Zoning Optimization</h2>
+                <div class="contentIMGdiv" style="height:25vw;">
+                    <img class="contentImg" src="images/SR4Pres.png">
+                </div>
+                <p class="subtext2">
+                    <br>
+                    - Analyzed CAD to find angles of solar cells, created thorough calculations sheets for different configurations of series-connected solar zones.
+                    <br><br>
+                    - Developed robust Python script to determine optimal zoning configuration under various conditions.
+                </p>
+                <br>
+        </div>
+
+        <div onclick="togGroup('organizations-2')" style="background-image:url(images/SBS.PNG)" class="toggHeader"><h1 class="subheading">VGDev | <span style="font-size:0.75em;">Level Design</span></h1><h1 class="closeGroup" id="organizations-2-box">+</h1></div>
+        <div style="display:none;" id="organizations-2" class="togglableGroup">
+            <h2 class="subheading2">Side By Side, Beta Tester's Guide to Gravity Manipulation</h2>
+                <div class="contentIMGdiv" style="height:15vw;">
+                    <img class="contentImg" src="images/SBS.PNG">
+                </div>
+                <p class="subtext2">
+                    - Conceptualized level sections, communicated with other teams (programming, art, writing) to incorporate all facets of game into brainstorming and level design.
+                    <br><br>
+                    - Designed level sections using Unity platform and C#.
+                </p>
+                <br>
+        </div>
+
+        <div onclick="togGroup('organizations-3')" style="background-image:url(images/Naadham_Program-1.jpg)" class="toggHeader"><h1 class="subheading">Aarohi | <span style="font-size:0.75em;">Finance Officer</span></h1><h1 class="closeGroup" id="organizations-3-box">+</h1></div>
+        <div style="display:none;" id="organizations-3" class="togglableGroup">
+            <h2 class="subheading2">Fall 2021 Concert (Naadham)</h2>
+                <div class="contentIMGdiv" style="height:30vw;">
+                    <img class="contentImg" src="images/Naadham_Program-1.jpg">
+                </div>
+                <p class="subtext2">
+                    - Wrote and submitted bills to RHA to obtain nearly hundreds of dollars in funding for the concert, paying off taxes that were previously a challenge for the organization.
+                    <br><br>
+                    - Helped coordinate concert logistics, promotion, and planning.
+                </p>
+                <br>
+        </div>
+        <br><br>
     </div>
     <!--
+
+        Unusued colors for text:
+        style="color:rgb(255, 167, 85);" (yellow)
+        style="color:rgb(100, 194, 248);" (light blue)
+        style="color:rgb(139, 119, 250);" (purple)
+        style="color:rgb(248, 73, 91);" (red)
+
+
     <div id="footer">
         <p><span style="font-size:0.9em;">O</span><span style="font-size:1.1em;">&nbsp;O</span><span style="font-size:1.34em;">&nbsp;O</span></p>
     </div>

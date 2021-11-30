@@ -101,9 +101,22 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             "directory": "Organizations.html",
             "contents": [
                 {
-                    "name": "_",
-                    "src": "_",
-                    "tags": []
+                    "name": "GT Solar Racing",
+                    "link": "#organizations-1-box",
+                    "src": "PYTHONOPTIMIZATION.PNG",
+                    "tags": ["Auxiliary", "Systems", "Solar", "MPPT", "Engineering", "Electrical", "Mechanical", "Team"]
+                },
+                {
+                    "name": "VGDev",
+                    "link": "#organizations-2-box",
+                    "src": "SBS.PNG",
+                    "tags": ["Video", "Game", "Development", "Level", "Design", "Unity"]
+                },
+                {
+                    "name": "Aarohi",
+                    "link": "#organizations-3-box",
+                    "src": "Naadham_Program-1.jpg",
+                    "tags": ["Finance", "Officer", "Indian", "Classical", "Music", "Singing", "Vocals"]
                 }
             ]
         },
