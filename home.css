@@ -506,7 +506,18 @@ iframe {
 }
 
 .inTxtLink:hover {
-    color: black;
+    color: #77603d;
+}
+
+.inTxtLink2 {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.smIcon {
+    width: 2em;
+    margin-right: 1em;
 }
 
 #footer {
