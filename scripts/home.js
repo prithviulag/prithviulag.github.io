@@ -72,7 +72,7 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
                 {
                     "name": "Programming and Coding",
                     "link": "#skills-1-box",
-                    "src": "PYTHONOPTIMIZATION.PNG",
+                    "src": "skillIcons/python.png",
                     "tags": ["Python", "JavaScript", "Java", "HTML", "CSS", "Processing"]
                 },
                 {

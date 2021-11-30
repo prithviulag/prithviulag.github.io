@@ -326,11 +326,10 @@ iframe {
 .gallery {
     width: 80%;
     margin: auto auto;
-    padding-bottom: 3em;
 }
 
 .gallImg {
-    width: 10em;
+    width: 8em;
     width: 50%;
     background-position: center;
     background-size: cover;
