@@ -70,29 +70,22 @@ var collections = { //USE "_" AS FILLER FOR NON-EXISTENT PAINTINGS (this is what
             "directory": "Skills.html",
             "contents": [
                 {
-                    "name": "Winter Trees",
-                    "src": "IMG_5589.jpg",
-                    "tags": ["Snow", "Outdoors"]
+                    "name": "Programming and Coding",
+                    "link": "#skills-1-box",
+                    "src": "PYTHONOPTIMIZATION.PNG",
+                    "tags": ["Python", "JavaScript", "Java", "HTML", "CSS", "Processing"]
                 },
                 {
-                    "name": "Yard and Snowy Bush",
-                    "src": "IMG_7963.jpg",
-                    "tags": ["Snow", "Outdoors", "Winter"]
+                    "name": "Software",
+                    "link": "#skills-2-box",
+                    "src": "skillIcons/SolidWorks-Logo.jpg",
+                    "tags": ["Solidworks", "MS", "Office", "Excel", "Word", "Powerpoint", "Git", "Github", "Eagle", "Inventor"]
                 },
                 {
-                    "name": "Busch Gardens",
-                    "src": "IMG_7964.jpg",
-                    "tags": ["Water", "Outdoors", "Trees", "Green", "River"]
-                },
-                {
-                    "name": "Thomas Meeting",
-                    "src": "IMG_7965.jpg",
-                    "tags": ["Snow", "Snowy", "House", "Townhome", "Building", "Winter"]
-                },
-                {
-                    "name": "Snow Bush",
-                    "src": "IMG_7966.jpg",
-                    "tags": ["Snow", "Snowy", "Outdoors", "Winter"]
+                    "name": "Communication",
+                    "link": "#skills-3-box",
+                    "src": "skillIcons/icon1.png",
+                    "tags": ["Presentations", "Technical", "Reports", "Team", "Leadership"]
                 }
             ]
         },

@@ -515,6 +515,14 @@ iframe {
     align-items: center;
 }
 
+.inTxtDiv {
+    color: #8ccc6d;
+    width: auto;
+    font-size:1.25em;
+    margin-right:2em;
+    margin-bottom:1em
+}
+
 .smIcon {
     width: 2em;
     margin-right: 1em;
